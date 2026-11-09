@@ -1,0 +1,1517 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Grace Congregation, Nsema-Aburaso</title>
+<style>
+:root{
+  --bg:#e7edf9; --card:#ffffff; --ink:#101a2e; --muted:#4c5b78;
+  --brand:#0b3d91; --brand2:#c8102e; --line:#c3d0ea;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a1122; --card:#111c34; --ink:#e8edfb; --muted:#9fb0d0;
+    --brand:#3f6fd6; --brand2:#e8536a; --line:#22335c; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a1122; --card:#111c34; --ink:#e8edfb; --muted:#9fb0d0;
+  --brand:#3f6fd6; --brand2:#e8536a; --line:#22335c; color-scheme:dark;
+}
+body{background:var(--bg) !important;}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.5;}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--brand);color:#fff;padding:.8rem 1rem;box-shadow:0 2px 8px rgba(0,0,0,.15);}
+.top{display:flex;align-items:center;gap:.7rem;max-width:1000px;margin:0 auto;flex-wrap:wrap;}
+.logo{width:44px;height:44px;border-radius:50%;background:#fff;color:var(--brand);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex:none;}
+.titles{flex:1;min-width:180px;}
+.titles h1{margin:0;font-size:1.05rem;line-height:1.2;}
+.titles p{margin:0;font-size:.75rem;opacity:.9;}
+.motto{width:100%;text-align:center;font-style:italic;font-size:.85rem;opacity:.95;margin-top:.3rem;}
+nav{background:var(--card);border-bottom:1px solid var(--line);overflow-x:auto;position:sticky;top:calc(env(safe-area-inset-top,0px) + 64px);z-index:9;}
+nav .wrap{display:flex;gap:.2rem;max-width:1000px;margin:0 auto;padding:.3rem .5rem;}
+nav button{background:none;border:none;color:var(--ink);font-family:inherit;padding:.5rem .7rem;font-size:.85rem;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent;}
+nav button.active{color:var(--brand);border-color:var(--brand2);font-weight:bold;}
+main{max-width:1000px;margin:0 auto;padding:1.2rem;}
+section{display:none;}
+section.active{display:block;animation:fade .2s;}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+h2{color:var(--brand);border-bottom:2px solid var(--brand2);display:inline-block;padding-bottom:.2rem;}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem;margin-bottom:1rem;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.7rem;}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.8rem;text-align:center;}
+.stat b{display:block;font-size:1.6rem;color:var(--brand);}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:.6rem;}
+.tile{aspect-ratio:1;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.6rem;position:relative;overflow:hidden;}
+.tile span{position:absolute;bottom:4px;left:6px;right:6px;font-size:.65rem;background:rgba(0,0,0,.35);border-radius:6px;padding:2px 4px;font-family:sans-serif;}
+input,textarea,select{width:100%;padding:.55rem;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font-family:inherit;margin:.25rem 0;}
+button.btn{background:var(--brand);color:#fff;border:none;border-radius:8px;padding:.55rem 1rem;cursor:pointer;font-family:inherit;}
+button.ghost{background:none;border:1px solid var(--line);color:var(--ink);}
+.pwrow{position:relative;}
+.pwrow button{position:absolute;right:6px;top:6px;background:none;border:none;color:var(--muted);cursor:pointer;font-size:.85rem;padding:.3rem;}
+.small{font-size:.8rem;color:var(--muted);}
+.modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:20;align-items:center;justify-content:center;padding:1rem;}
+.modal-bg.open{display:flex;}
+.modal{background:var(--card);border-radius:12px;padding:1.2rem;max-width:340px;width:100%;}
+.ann{border-left:4px solid var(--brand2);padding:.5rem .8rem;margin-bottom:.6rem;background:var(--bg);border-radius:0 8px 8px 0;}
+.ann h3{margin:.1rem 0;font-size:1rem;}
+.badge{display:inline-block;background:var(--brand2);color:#fff;font-size:.7rem;padding:.15rem .5rem;border-radius:10px;margin-left:.4rem;}
+footer{text-align:center;padding:1.2rem;color:var(--muted);font-size:.8rem;}
+.close-x{float:right;background:none;border:none;font-size:1.1rem;cursor:pointer;color:var(--muted);}
+.fl{display:block;margin:.3rem 0}.fl input,.fl select{margin:.15rem 0}.attb{border:1px solid var(--line);background:none;color:var(--ink);border-radius:6px;padding:.3rem .5rem;cursor:pointer;font-family:inherit;font-size:.78rem}.tbl{width:100%;border-collapse:collapse;font-size:.88rem}.tbl th,.tbl td{padding:.4rem .3rem;border-bottom:1px solid var(--line);text-align:left}.tw{overflow-x:auto}
+.tbl .num,.tbl th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.barcell{width:40%;min-width:70px}
+.bar{height:10px;border-radius:5px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--brand)}
+.sub{margin:1.3rem 0 .5rem;font-size:1.05rem;color:var(--ink)}
+.tbl tr.tot td{font-weight:bold;border-top:2px solid var(--line)}
+.modal .row{display:flex;gap:.5rem;justify-content:flex-end;flex-wrap:wrap}
+nav{overflow:visible}
+nav .wrap{position:relative;align-items:center}
+.dd{position:relative}
+.dd>button{font-weight:bold;color:var(--brand);border-bottom-color:var(--brand2);font-size:.95rem}
+.ddp{display:none;position:absolute;left:0;top:100%;min-width:240px;max-height:70vh;overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:0 0 10px 10px;box-shadow:0 8px 20px rgba(0,0,0,.22);z-index:30;padding:.3rem}
+.dd.open .ddp{display:block}
+.ddp button{display:block;width:100%;text-align:left;border-bottom:none;padding:.65rem .8rem;border-radius:6px;font-size:.9rem}
+.ddp button.active{background:var(--bg);color:var(--brand);font-weight:bold}
+.cur{color:var(--muted);font-size:.85rem;margin-left:.6rem}
+.bigpic{width:100%;aspect-ratio:16/9;max-height:340px;border-radius:12px;overflow:hidden;margin-bottom:.6rem;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;font-size:1.1rem}
+.bigpic img{width:100%;height:100%;object-fit:cover;cursor:zoom-in}
+.hps{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:.5rem;margin-bottom:.9rem}
+.hp{position:relative;aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:var(--line)}
+.hp img{width:100%;height:100%;object-fit:cover;cursor:zoom-in}
+.hp.add{border:2px dashed var(--line);background:none;display:flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;color:var(--muted);font-size:1.4rem}
+.hpx{position:absolute;top:4px;right:4px;background:rgba(0,0,0,.6);color:#fff;border:none;border-radius:50%;width:24px;height:24px;cursor:pointer}
+.loginPic{width:100%;aspect-ratio:16/9;border-radius:10px;overflow:hidden;margin-bottom:.7rem;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;font-size:1rem}
+.modal{position:relative}
+.loginPic+.close-x{position:absolute;top:1.5rem;right:1.5rem;float:none;background:rgba(0,0,0,.5);color:#fff;border-radius:50%;width:28px;height:28px;line-height:28px;padding:0;text-align:center}
+.bday{border-left:4px solid var(--brand2)}
+.holder{margin-bottom:.8rem}
+.sl{overflow:hidden;border-radius:12px;width:100%;aspect-ratio:4/3;background:linear-gradient(135deg,var(--brand),var(--brand2));position:relative}
+.holder.big .sl{aspect-ratio:16/9;max-height:360px}
+.track{display:flex;height:100%}
+.track img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;cursor:zoom-in}
+.sl .ph{height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:.5rem;font-size:.95rem}
+.hgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.7rem;margin-bottom:.9rem}
+.hgrid .holder{margin:0}
+.hbar{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.35rem}
+.hbar button{font-size:.75rem;padding:.3rem .55rem}
+.hth{display:flex;gap:.3rem;flex-wrap:wrap;margin-top:.3rem}
+.hth span{position:relative;display:inline-block}
+.hth img{width:38px;height:38px;object-fit:cover;border-radius:6px;display:block}
+.hth button{position:absolute;top:-5px;right:-5px;width:18px;height:18px;border-radius:50%;border:none;background:#222;color:#fff;font-size:.6rem;line-height:18px;padding:0;cursor:pointer}
+#loginBtn{position:fixed;right:14px;bottom:14px;z-index:15;box-shadow:0 3px 10px rgba(0,0,0,.3)}
+#home{padding-bottom:3.5rem}
+.bdrow{display:flex;align-items:center;gap:.7rem;margin:.5rem 0}
+.bdrow.big{padding:.4rem 0}
+.chips button{margin:0 .3rem .4rem 0}
+</style>
+
+<header>
+  <div class="top">
+    <div class="logo"><img src="data:image/png;base64,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" alt="Presbyterian Church of Ghana crest" style="width:100%;height:100%;object-fit:contain;border-radius:50%;"></div>
+    <div class="titles">
+      <h1>Presbyterian Church of Ghana</h1>
+      <p id="subtitleText">Grace Congregation &middot; Nsema-Aburaso &middot; Kwadaso District &middot; Asante Presbytery</p>
+    </div>
+    <button class="btn" id="memberLoginBtn" style="background:var(--brand2);color:#fff">Member Login</button>
+  </div>
+  <div class="motto" id="mottoText">Asomdwoe nka wo, ...enka wo so!</div>
+</header>
+
+<nav><div class="wrap" id="navWrap"></div></nav>
+
+<main id="main"></main>
+
+<footer>Grace Congregation, Nsema-Aburaso &middot; Asante Presbytery &middot; Presbyterian Church of Ghana<div class="small" id="saveState" style="margin-top:.4rem"></div></footer>
+
+<div class="modal-bg" id="modalBg">
+  <div class="modal">
+    <button class="close-x" id="closeModal">✕</button>
+    <h2 style="font-size:1.1rem;border:none;">Church Admin Login</h2>
+    <p class="small">For church officers who update this website. Not a full member account system — a shared passcode set by the admin.</p>
+    <div id="loginForm">
+      <input id="loginUser" placeholder="Name">
+      <div class="pwrow">
+        <input id="loginPass" type="password" placeholder="Passcode" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+        <button id="toggleLoginPw" type="button">Show</button>
+      </div>
+      <button class="btn" id="doLogin" style="width:100%;margin-top:.4rem;">Log in</button>
+      <p class="small" id="loginMsg"></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-bg" id="memModalBg">
+  <div class="modal">
+    <button class="close-x" id="closeMemModal">✕</button>
+    <h2 style="font-size:1.1rem;border:none;">Member Login</h2>
+    <p class="small">Enter your name exactly as registered and the passcode given to you by the church office.</p>
+    <input id="memName" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Full name or User ID (e.g. GC-0001)">
+    <div class="pwrow">
+      <input id="memPass" type="password" placeholder="Passcode" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      <button id="toggleMemPw" type="button">Show</button>
+    </div>
+    <button class="btn" id="doMemLogin" style="width:100%;margin-top:.4rem;">View my details</button>
+    <p class="small" id="memMsg"></p>
+  </div>
+</div>
+
+<div class="modal-bg" id="profileBg">
+  <div class="modal" style="max-width:420px;">
+    <button class="close-x" id="closeProfile">✕</button>
+    <div id="profileBody"></div>
+  </div>
+</div>
+
+<script>
+// ---- Netlify connection (online storage + logins) ----
+window.claude={use:async()=>null};
+const API_URL='/api';
+let adminSession=null; // {user,token,exp,salt,hash} kept on this device so the admin can also log in offline
+try{ adminSession=JSON.parse(localStorage.getItem('gc_admin_session')||'null'); }catch(e){}
+function saveAdminSession(s){ adminSession=s; try{ if(s) localStorage.setItem('gc_admin_session',JSON.stringify(s)); else localStorage.removeItem('gc_admin_session'); }catch(e){} }
+const authToken=()=> (isAdmin && adminSession && adminSession.exp>Date.now())?adminSession.token:null;
+async function apiCall(op,body,tok){
+  const h={'Content-Type':'application/json'};
+  const t=tok===undefined?authToken():tok; if(t) h.Authorization='Bearer '+t;
+  const r=await fetch(API_URL,{method:'POST',headers:h,body:JSON.stringify(Object.assign({op},body||{})),cache:'no-store'});
+  let j=null; try{ j=await r.json(); }catch(e){}
+  if(!r.ok||j==null){
+    const e=new Error((j&&j.error)||('The online service is not available ('+r.status+').'));
+    e.status=r.status; e.code=r.status===400?'invalid_argument':r.status===413?'quota_exceeded':'http_'+r.status; throw e;
+  }
+  return j;
+}
+async function pbk(user,pass,salt){
+  const enc=new TextEncoder();
+  const k=await crypto.subtle.importKey('raw',enc.encode(String(user).trim().toLowerCase()+'\n'+pass),'PBKDF2',false,['deriveBits']);
+  const b=await crypto.subtle.deriveBits({name:'PBKDF2',hash:'SHA-256',salt:enc.encode(salt),iterations:100000},k,256);
+  return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('');
+}
+async function makeSession(user,pass,r){
+  const salt=Math.random().toString(36).slice(2)+Date.now().toString(36); let hash='';
+  try{ hash=await pbk(user,pass,salt); }catch(e){}
+  return {user:r.user||user,token:r.token,exp:r.exp,salt,hash};
+}
+async function adminLogin(user,pass){
+  user=user.trim(); pass=pass.trim();
+  try{
+    const r=await apiCall('login',{user,pass},null);
+    saveAdminSession(await makeSession(user,pass,r)); return 'ok';
+  }catch(e){
+    if(e.status===401) return 'bad';
+    if(e.status===429) return 'limited';
+    const s=adminSession;
+    if(s&&s.hash){ try{ if((await pbk(user,pass,s.salt))===s.hash) return 'offline'; }catch(x){} return 'bad'; }
+    return 'nolocal';
+  }
+}
+
+async function makeRemoteDb(){
+  const first=await apiCall('stamp'); // throws when the server cannot be reached
+  let lastStamp=first.stamp, lastPoll=Date.now(), refT=null;
+  const subs=new Set(), dirty=new Set();
+  const rootOf=p=>String(p).split('/')[0];
+  const runSub=async s=>{ try{ await s.run(); }catch(e){ if(s.err) s.err(e); } };
+  const refresh=roots=>Promise.all([...subs].filter(s=>!roots||roots.has(s.root)).map(runSub));
+  const soon=path=>{ dirty.add(rootOf(path)); clearTimeout(refT); refT=setTimeout(()=>{ const r=new Set(dirty); dirty.clear(); refresh(r); },400); };
+  async function poll(){
+    if(document.visibilityState!=='visible') return;
+    lastPoll=Date.now();
+    try{
+      const r=await apiCall('stamp');
+      if(r.stamp!==lastStamp){ lastStamp=r.stamp; await refresh(null); }
+    }catch(e){}
+  }
+  setInterval(()=>{ if(isAdmin) poll(); },45000);
+  document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='visible' && Date.now()-lastPoll>30000) poll(); });
+
+  async function fetchCol(col){
+    let docs=[],after=null;
+    do{
+      const r=await apiCall('list',{col,after});
+      if(isAdmin && r.admin===false){ const e=new Error('Your admin login has expired on the server. Log out, then log in again while online.'); e.status=401; throw e; }
+      docs=docs.concat(r.docs||[]); after=r.next||null;
+    }while(after);
+    return docs;
+  }
+  function build(docs,order,lim){
+    let a=docs.slice();
+    if(order) a.sort((x,y)=>{ const p=String((x.data||{})[order.f]||''), q=String((y.data||{})[order.f]||''); return (p<q?-1:p>q?1:0)*(order.dir==='desc'?-1:1); });
+    if(lim) a=a.slice(0,lim);
+    return {docs:a.map(d=>({id:d.id,data:()=>d.data})),size:a.length};
+  }
+  function subscribe(run,err,root){ const s={run,err,root}; subs.add(s); runSub(s); return ()=>subs.delete(s); }
+  function query(col,order,lim){
+    return {
+      orderBy:(f,dir)=>query(col,{f,dir:dir||'asc'},lim),
+      limit:n=>query(col,order,n),
+      doc:id=>docRef(col+'/'+id),
+      async get(){ return build(await fetchCol(col),order,lim); },
+      onSnapshot(cb,err){ return subscribe(async()=>cb(build(await fetchCol(col),order,lim)),err,rootOf(col)); }
+    };
+  }
+  function docRef(path){
+    return {
+      async get(){ const r=await apiCall('get',{path}); return {data:()=>r.data||undefined,exists:!!r.data,id:path.split('/').pop()}; },
+      async set(data){ await apiCall('set',{path,data}); soon(path); },
+      async delete(){ await apiCall('delete',{path}); soon(path); },
+      collection:n=>query(path+'/'+n),
+      onSnapshot(cb,err){ return subscribe(async()=>{ const r=await apiCall('get',{path}); cb({data:()=>r.data||undefined}); },err,rootOf(path)); }
+    };
+  }
+  return {doc:docRef, collection:c=>query(c), refresh:()=>refresh(null)};
+}
+
+const SECTIONS = [
+  {id:'home', label:'Home'},
+  {id:'history', label:'History'},
+  {id:'membership', label:'Membership'},
+  {id:'administration', label:'Administration'},
+  {id:'attendance', label:'Attendance'},
+  {id:'statistics', label:'Statistics'},
+  {id:'announcements', label:'Announcements'},
+  {id:'sermons', label:'Sermons & Devotions'},
+  {id:'events', label:'Upcoming Events'},
+  {id:'gallery', label:'Gallery'},
+  {id:'contact', label:'Contact & SMS'},
+];
+let bdays={day:'',list:[]}, bdLast=0, sdraft={}, edraft={}, sermKind='All';
+
+let content = null; // loaded from db
+let isAdmin = false;
+let dbNs = null;
+
+const DEFAULT_CONTENT = {
+  history: "Grace Congregation, Nsema-Aburaso was planted under the Presbyterian Church of Ghana to bring the Gospel and Presbyterian order to the Nsema-Aburaso community, within the Kwadaso District of the Asante Presbytery. (Church officers: log in to expand this history.)",
+  membershipText: "We welcome members of all ages into our Bible classes, Youth Fellowship, Men's Fellowship, Women's Fellowship, Choir, and Sunday School. Speak to the Session Clerk to register as a member.",
+  stats: [
+    {label:'Members', value:'—'},
+    {label:'Youth Fellowship', value:'—'},
+    {label:'Choir', value:'—'},
+    {label:'Sunday School', value:'—'},
+  ],
+  announcements: [
+    {id:1, title:'Welcome', body:'Welcome to the Grace Congregation website. Check here for weekly announcements.', date:''}
+  ],
+  gallery: [
+    {caption:'Sunday Worship'},{caption:'Choir'},{caption:'Youth Fellowship'},{caption:'Harvest'}
+  ],
+  galleryFolders:['Sunday Worship','Choir','Youth Fellowship','Harvest'],
+  motto: "Asomdwoe nka wo, ...enka wo so!",
+  welcomeText: "Welcome to Grace Congregation, Nsema-Aburaso, a congregation of the Presbyterian Church of Ghana in the Kwadaso District, Asante Presbytery.",
+  contactText: "Location: Nsema-Aburaso, Kwadaso District, Asante Presbytery\nDenomination: Presbyterian Church of Ghana\nAdd phone number / email / Session Clerk contact here once available.",
+  administration: [
+    {role:'Session Clerk', name:'—'},
+    {role:'Presiding Elder', name:'—'},
+    {role:'Catechist', name:'—'},
+  ],
+  churchPhoto: '',
+  loginPhoto: '',
+  homeHolders: [],
+  sermons: [],
+  events: [],
+  members: [],
+};
+
+function el(html){ const t=document.createElement('template'); t.innerHTML=html.trim(); return t.content.firstChild; }
+
+function buildNav(){
+  const wrap = document.getElementById('navWrap');
+  wrap.innerHTML = '';
+  const dd = el(`<div class="dd" id="navDd"><button type="button" id="homeDdBtn" aria-haspopup="true" aria-expanded="false">Home ▾</button><div class="ddp" role="menu"></div></div>`);
+  const panel = dd.querySelector('.ddp');
+  SECTIONS.forEach(s=>{
+    const b = el(`<button type="button" role="menuitem" data-id="${s.id}">${s.label}</button>`);
+    b.onclick = ()=>{ dd.classList.remove('open'); document.getElementById('homeDdBtn').setAttribute('aria-expanded','false'); showSection(s.id); };
+    panel.appendChild(b);
+  });
+  dd.querySelector('#homeDdBtn').onclick = (e)=>{ e.stopPropagation(); const o = dd.classList.toggle('open'); e.currentTarget.setAttribute('aria-expanded', o?'true':'false'); };
+  wrap.appendChild(dd);
+  wrap.appendChild(el('<span class="cur" id="navCur"></span>'));
+}
+document.addEventListener('click',e=>{ const d=document.getElementById('navDd'); if(d && !d.contains(e.target)) d.classList.remove('open'); });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ const d=document.getElementById('navDd'); if(d) d.classList.remove('open'); } });
+
+let curSec='home';
+function showSection(id,keep){
+  curSec=id;
+  document.querySelectorAll('nav button[data-id]').forEach(b=>b.classList.toggle('active', b.dataset.id===id));
+  document.querySelectorAll('main section').forEach(s=>s.classList.toggle('active', s.id===id));
+  const cur=document.getElementById('navCur'), sec=SECTIONS.find(s=>s.id===id);
+  if(cur) cur.textContent = (sec && id!=='home') ? '› '+sec.label : '';
+  if(!keep) window.scrollTo({top:0,behavior:'instant'});
+}
+
+// ---- dates, birthdays, small helpers ----
+const pad2=n=>String(n).padStart(2,'0');
+const todayISO=()=>{ const d=new Date(); return d.getFullYear()+'-'+pad2(d.getMonth()+1)+'-'+pad2(d.getDate()); };
+const fmtDate=iso=>{ const d=new Date(iso+'T00:00:00'); return isNaN(d)?String(iso||''):d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'}); };
+const daysFromToday=iso=>Math.round((new Date(iso+'T00:00:00')-new Date(todayISO()+'T00:00:00'))/864e5);
+const safeUrl=u=>/^https?:\/\/\S+$/i.test(u||'')?u:'';
+function localBirthdays(days){
+  const src = isAdmin
+    ? (content.members||[]).filter(m=>/^\d{4}-\d{2}-\d{2}$/.test(m.dob||'')).map(m=>({name:m.name,md:m.dob.slice(5),photo:m.photo||'',group:m.group||''}))
+    : (bdays.list||[]);
+  const base=new Date(); base.setHours(0,0,0,0);
+  const out=[];
+  for(let i=0;i<=days;i++){
+    const d=new Date(base); d.setDate(base.getDate()+i);
+    const md=pad2(d.getMonth()+1)+'-'+pad2(d.getDate());
+    const noLeap=new Date(d.getFullYear(),1,29).getMonth()!==1;
+    src.forEach(m=>{ if(m.md===md || (noLeap && md==='02-28' && m.md==='02-29')) out.push(Object.assign({},m,{offset:i,date:d})); });
+  }
+  return out;
+}
+function bdAvatar(m,sz){
+  return m.photo
+    ? `<img src="${m.photo}" alt="" style="width:${sz}px;height:${sz}px;border-radius:50%;object-fit:cover;flex:none">`
+    : `<div style="width:${sz}px;height:${sz}px;border-radius:50%;background:var(--line);display:flex;align-items:center;justify-content:center;flex:none;font-size:${Math.round(sz/2)}px">🎂</div>`;
+}
+function birthdayHtml(){
+  const l=localBirthdays(7); if(!l.length) return '';
+  const now=l.filter(x=>x.offset===0), soon=l.filter(x=>x.offset>0);
+  const nowHtml=now.map(m=>`<div class="bdrow big">${bdAvatar(m,72)}<div><div style="font-size:1.05rem">🎉 Happy Birthday, <b>${esc(m.name)}</b>!</div>${m.group?`<span class="badge" style="margin-left:0">${esc(m.group)}</span>`:''}</div></div>`).join('');
+  const soonHtml=soon.map(m=>`<div class="bdrow">${bdAvatar(m,40)}<div><b>${esc(m.name)}</b><div class="small">${m.offset===1?'Tomorrow':m.date.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'})}</div></div></div>`).join('');
+  return `<div class="card bday"><h3 style="margin:0 0 .3rem">🎂 Birthdays</h3>${nowHtml}${soon.length?`<div class="small" style="margin-top:.4rem">Coming up this week</div>${soonHtml}`:''}</div>`;
+}
+async function loadBirthdays(force){
+  if(isAdmin||!dbNs) return;
+  if(!force && Date.now()-bdLast<3600000) return;
+  bdLast=Date.now();
+  try{
+    const r=await apiCall('birthdays',{days:7},null);
+    bdays={day:todayISO(),list:r.list||[]};
+    localSet('bdays',bdays);
+    const t=localBirthdays(0);
+    if(t.length){ let seen=''; try{ seen=localStorage.getItem('gc_bd_toast'); }catch(e){} if(seen!==todayISO()){ try{ localStorage.setItem('gc_bd_toast',todayISO()); }catch(e){} toast('🎂 Birthday today: '+t.map(x=>x.name).join(', ')); } }
+    rebuild();
+  }catch(e){}
+}
+
+function render(){
+  const main = document.getElementById('main');
+  main.innerHTML = '';
+  if(!ready){ main.innerHTML='<div class="card"><p>'+(dbFailed?'No saved copy on this device yet. Please connect to the internet once so the church data can load. After that the site also works offline.':'Loading…')+'</p></div>'; return; }
+  const c = content || DEFAULT_CONTENT;
+  document.getElementById('mottoText').textContent = c.motto;
+
+  const holders=[{id:'main',big:true}].concat((c.homeHolders||[]).map(h=>({id:h.id})));
+  const holderHtml=(h)=>{
+    const pics=(c.gallery||[]).filter(g=>g.photo&&g.home&&(g.holder===h.id||(h.id==='main'&&!g.holder))).map(g=>({id:g.id,photo:g.photo}));
+    if(h.id==='main'&&c.churchPhoto) pics.unshift({id:'__church',photo:c.churchPhoto});
+    const n=pics.length;
+    const imgs=pics.map(p=>`<img src="${p.photo}" alt="" onclick="openPic(this.src)">`).join('');
+    const clone=n>1?`<img src="${pics[0].photo}" alt="" onclick="openPic(this.src)">`:'';
+    const body=n?`<div class="track">${imgs}${clone}</div>`:`<div class="ph" ${isAdmin?`onclick="pickHolderPics('${h.id}')" style="cursor:pointer"`:''}>${isAdmin?'⛪<br>Tap to add pictures':'⛪'}</div>`;
+    const bar=isAdmin?`<div class="hbar"><button type="button" class="btn ghost" onclick="pickHolderPics('${h.id}')">＋ Add pictures</button>${h.id==='main'?'':`<button type="button" class="btn ghost" onclick="delHolder('${h.id}')">Remove holder</button>`}</div>
+      ${n?`<div class="hth">${pics.map(p=>`<span><img src="${p.photo}" alt=""><button type="button" onclick="removeHolderPic('${p.id}')" aria-label="Remove picture">✕</button></span>`).join('')}</div>`:''}`:'';
+    return `<div class="holder${h.big?' big':''}"><div class="sl" data-n="${n}">${body}</div>${bar}</div>`;
+  };
+  const bigHolder=holderHtml(holders[0]);
+  const smallHolders=holders.slice(1).map(holderHtml).join('');
+  main.appendChild(el(`<section id="home" class="active">
+    <h2>Welcome</h2>
+    ${birthdayHtml()}
+    ${bigHolder}
+    ${smallHolders?`<div class="hgrid">${smallHolders}</div>`:''}
+    ${isAdmin?`<p><button class="btn ghost" onclick="addHolder()">＋ Add picture holder</button> <span class="small">Pictures inside each holder slide automatically.</span></p>`:''}
+    <div class="card"><p>${c.welcomeText}</p>
+    <p class="small">Tap <b>Home ▾</b> above to open any menu: History, Membership, Administration, Attendance, Statistics, Announcements, Sermons &amp; Devotions, Upcoming Events, Gallery, and Contact &amp; SMS. Members: use "Member Login" above to view your own details.</p>
+      ${isAdmin?`<p class="small">Edit welcome text:</p><textarea id="welcomeEdit">${c.welcomeText}</textarea>
+      <p class="small">Edit motto (Twi):</p><input id="mottoEdit" value="${c.motto}">
+      <button class="btn" onclick="saveHome()">Save</button>
+      <p class="small" style="margin-top:.9rem">Birthdays appear automatically at the top of this page, using the Date of Birth on each member's record. Visitors see only the name, day and month and photo of people whose birthday is within the next 7 days. The year of birth is never shown.</p>`:''}
+    </div>
+    <button class="btn" type="button" id="loginBtn" style="font-size:.8rem;padding:.5rem .9rem">Admin Login</button>
+  </section>`));
+
+  main.appendChild(el(`<section id="history">
+    <h2>History</h2>
+    <div class="card"><p id="historyText">${c.history}</p>
+      ${isAdmin?`<textarea id="historyEdit">${c.history}</textarea><button class="btn" onclick="saveHistory()">Save</button>`:''}
+    </div>
+  </section>`));
+
+  const adminList = c.administration.map((a,i)=>`<div class="stat"><b>${a.name}</b>${a.role}</div>`).join('');
+  const memberRows = (c.members||[]).map((m,i)=>`<div class="ann" style="display:flex;gap:.6rem;align-items:flex-start;flex-wrap:wrap;">
+      <div style="cursor:pointer;" title="Tap to set photo" onclick="setMemberPhoto(${i})">
+        ${m.photo?`<img src="${m.photo}" style="width:44px;height:44px;border-radius:50%;object-fit:cover;">`:`<div style="width:44px;height:44px;border-radius:50%;background:var(--line);display:flex;align-items:center;justify-content:center;">👤</div>`}
+      </div>
+      <div style="flex:1;min-width:160px;">
+        <b>${m.name}</b> <span class="badge">${m.group||'—'}</span>
+        <p class="small" style="margin:.2rem 0">${m.phone||'no phone on file'} &middot; ID: <b>${m.userId||'—'}</b> &middot; passcode: <b>${m.passcode}</b></p>
+        <input placeholder="Notes for this member" value="${m.info||''}" onchange="setMemberInfo(${i}, event)" style="margin:0;">
+        <button class="btn ghost" style="margin-top:.3rem;font-size:.75rem;padding:.3rem .6rem;" onclick="sendCredentials(${i})">Send ID &amp; passcode by SMS</button>
+        <p class="small" id="credMsg${i}" style="margin:.2rem 0 0;"></p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:.3rem"><button class="btn ghost" onclick="editMember(${i})">Edit</button><button class="btn ghost" onclick="removeMember(${i})">Remove</button></div>
+    </div>`).join('') || '<p class="small">No members added yet.</p>';
+  main.appendChild(el(`<section id="administration">
+    <h2>Administration</h2>
+    <div class="grid">${adminList}</div>
+    ${isAdmin?backupCard():''}
+    ${isAdmin?credCard():''}
+    ${isAdmin?`<div class="card" style="margin-top:1rem">
+      <p class="small">Edit officers (role,name per line):</p>
+      <textarea id="adminEdit" rows="4">${c.administration.map(a=>a.role+','+a.name).join('\n')}</textarea>
+      <button class="btn" onclick="saveAdministration()">Save</button></div>`:''}
+
+    ${isAdmin?`<div class="card" style="margin-top:1rem">
+      <h3 style="margin-top:0">Congregation Members <span class="small">(private — never shown to visitors)</span></h3>
+      <p class="small">Add a member — a passcode is generated automatically for them to log in and view (only) their own details.</p>
+      <div style="display:flex;gap:.8rem;flex-wrap:wrap;align-items:flex-start;">
+        <div id="newMemPhotoBox" onclick="pickNewMemPhoto()" style="cursor:pointer;width:90px;height:110px;border-radius:10px;border:2px dashed var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-size:.7rem;color:var(--muted);overflow:hidden;">${newMemPhoto?`<img src="${newMemPhoto}" style="width:100%;height:100%;object-fit:cover;">`:'📷<br>Tap to upload picture'}</div>
+        <div style="flex:1;min-width:220px;">
+          <label class="fl small">Name<input id="newMemName" placeholder="Full name" value="${esc(draft.name)}" oninput="draft.name=this.value"></label>
+          <label class="fl small">Phone number<input id="newMemPhone" placeholder="Phone number" value="${esc(draft.phone)}" oninput="draft.phone=this.value"></label>
+          <label class="fl small">Group / Fellowship<input id="newMemGroup" placeholder="e.g. Choir, Youth, Men's Fellowship" value="${esc(draft.group)}" oninput="draft.group=this.value"></label>
+          ${MEM_FIELDS.map(([k,l,t])=>`<label class="fl small">${l}<input id="newMem_${k}" type="${t}" value="${esc(draft[k])}" oninput="draft['${k}']=this.value"></label>`).join('')}
+          <label class="fl small">Communicant / Non-Communicant<select id="newMemComm"><option>Communicant</option><option>Non-Communicant</option></select></label>
+        </div>
+      </div>
+      <button class="btn" onclick="addMember()">Add member &amp; generate passcode</button>
+      <div style="margin-top:.8rem">${memberRows}</div>
+      <p class="small" style="margin-top:.6rem"><b>Note:</b> this passcode system is a front-of-house convenience, not bank-grade security — anyone who can view this admin panel's data can see it. Don't store highly sensitive data here.</p>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">Message Members (SMS)</h3>
+      <p class="small">Pick who to message, then continue in your phone's messaging app — this opens a pre-addressed text, it doesn't send automatically (no SMS gateway is connected).</p>
+      <select id="smsGroupPick"><option value="__all__">All members</option></select>
+      <button class="btn" onclick="composeGroupSms()">Compose message</button>
+      <p class="small" id="smsAdminMsg"></p>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">Export &amp; Print</h3>
+      <button class="btn" onclick="exportMembersCsv()">Export members (CSV)</button>
+      <button class="btn ghost" onclick="printDirectory()">Print member directory</button>
+    </div>`:''}
+  </section>`));
+
+  main.appendChild(el(`<section id="attendance">
+    <h2>Attendance</h2>
+    <div id="attTotals"></div>
+    ${isAdmin?'<div id="attBox"></div>':'<div class="card"><p class="small">Attendance registers are kept by church officers. Log in as Admin to record Sunday service and group meeting attendance.</p></div>'}
+  </section>`));
+
+  main.appendChild(el(`<section id="membership">
+    <h2>Membership</h2>
+    <div class="card"><p id="memText">${c.membershipText}</p>
+      ${isAdmin?`<textarea id="memEdit">${c.membershipText}</textarea><button class="btn" onclick="saveMembership()">Save</button>`:''}
+    </div>
+  </section>`));
+
+  const statsGrid = c.stats.map(s=>`<div class="stat"><b>${s.value}</b>${s.label}</div>`).join('');
+  main.appendChild(el(`<section id="statistics">
+    <h2>Statistics</h2>
+    <div class="grid">${statsGrid}</div>
+    ${groupStatsHtml(c)}
+    ${isAdmin?`<div class="card" style="margin-top:1rem">
+      <p class="small">Edit figures (label,value per line):</p>
+      <textarea id="statsEdit" rows="4">${c.stats.map(s=>s.label+','+s.value).join('\n')}</textarea>
+      <button class="btn" onclick="saveStats()">Save</button></div>`:''}
+  </section>`));
+
+  const annList = c.announcements.slice().reverse().map(a=>`<div class="ann"><h3>${a.title}${a.date?`<span class="badge">${a.date}</span>`:''}</h3><p>${a.body}</p></div>`).join('') || '<p class="small">No announcements yet.</p>';
+  main.appendChild(el(`<section id="announcements">
+    <h2>Announcements</h2>
+    ${isAdmin?`<div class="card"><input id="annTitle" placeholder="Title"><textarea id="annBody" placeholder="Details" rows="2"></textarea><button class="btn" onclick="addAnnouncement()">Post announcement</button></div>`:''}
+    ${annList}
+  </section>`));
+
+  const photos=(c.gallery||[]).filter(g=>g.photo&&!g.home), folders=c.galleryFolders||[];
+  if(galFolder!=='All' && !folders.includes(galFolder)) galFolder='All';
+  const shown=galFolder==='All'?photos:photos.filter(g=>g.folder===galFolder);
+  const chips=['All'].concat(folders).map(f=>`<button class="attb" data-f="${esc(f)}" onclick="setGalFolder(this.dataset.f)" style="margin:0 .3rem .4rem 0;${f===galFolder?'background:#2f6b4f;color:#fff;border-color:#2f6b4f;':''}">${esc(f)}${f==='All'?'':' ('+photos.filter(g=>g.folder===f).length+')'}</button>`).join('');
+  const galTiles=shown.map(g=>`<div class="tile" style="background:none;position:relative;"><img src="${g.photo}" style="width:100%;height:100%;object-fit:cover;border-radius:10px;"><span>${esc(g.caption)}</span>${isAdmin?`<button onclick="removeGalleryPhoto('${g.id}')" style="position:absolute;top:4px;right:4px;background:rgba(0,0,0,.5);color:#fff;border:none;border-radius:50%;width:22px;height:22px;cursor:pointer;">✕</button>`:''}</div>`).join('');
+  main.appendChild(el(`<section id="gallery">
+    <h2>Gallery</h2>
+    <p class="small">Photos from church life and events.</p>
+    <div>${chips}</div>
+    ${galTiles?`<div class="gallery">${galTiles}</div>`:'<p class="small">No photos in this folder yet.</p>'}
+    ${isAdmin?`<div class="card" style="margin-top:1rem">
+      <p class="small"><b>Create a folder</b></p>
+      <input id="galNewFolder" placeholder="Folder name (e.g. Harvest 2026)">
+      <button class="btn ghost" onclick="addGalFolder()">Create folder</button>
+      ${galFolder!=='All'&&!shown.length?`<button class="btn ghost" onclick="delGalFolder()">Delete empty folder “${esc(galFolder)}”</button>`:''}
+      <p class="small" style="margin-top:.8rem"><b>Add photos to a folder</b></p>
+      <label class="fl small">Folder<select id="galFolderPick">${folders.map(f=>`<option ${f===galFolder?'selected':''}>${esc(f)}</option>`).join('')}</select></label>
+      <input id="galCaption" placeholder="Caption (optional)">
+      <button class="btn" onclick="pickGalleryPhotos()">Choose photos…</button>
+    </div>`:''}
+  </section>`));
+
+  const sermAll=(c.sermons||[]).slice().sort((a,b)=>(b.date||'').localeCompare(a.date||'')||((b.id||0)-(a.id||0)));
+  const sermShown=sermKind==='All'?sermAll:sermAll.filter(s=>s.kind===sermKind);
+  const sermChips=['All','Sermon','Devotion'].map(k=>`<button class="attb" onclick="setSermKind('${k}')" style="${k===sermKind?'background:var(--brand);color:#fff;border-color:var(--brand);':''}">${k==='All'?'All':k+'s'}</button>`).join('');
+  const sermItems=sermShown.map(s=>{ const u=safeUrl(s.link); return `<div class="ann"><h3>${esc(s.title)}<span class="badge">${esc(s.kind||'Sermon')}</span></h3>
+      <p class="small">${esc(s.date?fmtDate(s.date):'')}${s.speaker?' · '+esc(s.speaker):''}</p>
+      ${s.scripture?`<p><i>${esc(s.scripture)}</i></p>`:''}
+      <p style="white-space:pre-line">${esc(s.body)}</p>
+      ${u?`<p><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">Listen / watch</a></p>`:''}
+      ${isAdmin?`<button class="btn ghost" onclick="delSermon(${Number(s.id)})">Delete</button>`:''}</div>`; }).join('') || '<p class="small">Nothing posted here yet.</p>';
+  const sermForm=isAdmin?`<div class="card"><h3 style="margin-top:0">Post a sermon or devotion</h3>
+      <label class="fl small">Type<select onchange="sdraft.kind=this.value">${['Sermon','Devotion'].map(k=>`<option ${(sdraft.kind||'Sermon')===k?'selected':''}>${k}</option>`).join('')}</select></label>
+      <input placeholder="Title" value="${esc(sdraft.title)}" oninput="sdraft.title=this.value">
+      <label class="fl small">Date<input type="date" value="${esc(sdraft.date||todayISO())}" oninput="sdraft.date=this.value"></label>
+      <input placeholder="Preacher / author (optional)" value="${esc(sdraft.speaker)}" oninput="sdraft.speaker=this.value">
+      <input placeholder="Scripture reading (e.g. John 3:16-21)" value="${esc(sdraft.scripture)}" oninput="sdraft.scripture=this.value">
+      <textarea rows="6" placeholder="Message or devotion text" oninput="sdraft.body=this.value">${esc(sdraft.body)}</textarea>
+      <input placeholder="Link to audio or video (optional, starts with https://)" value="${esc(sdraft.link)}" oninput="sdraft.link=this.value">
+      <button class="btn" onclick="addSermon()">Post</button></div>`:'';
+  main.appendChild(el(`<section id="sermons">
+    <h2>Sermons &amp; Devotions</h2>
+    ${sermForm}
+    <div class="chips">${sermChips}</div>
+    ${sermItems}
+  </section>`));
+
+  const evToday=todayISO(), evAll=(c.events||[]).slice();
+  const evUp=evAll.filter(e=>(e.date||'')>=evToday).sort((a,b)=>(a.date||'').localeCompare(b.date||'')||(a.id||0)-(b.id||0));
+  const evPast=evAll.filter(e=>(e.date||'')<evToday).sort((a,b)=>(b.date||'').localeCompare(a.date||''));
+  const evWhen=d=>{ const n=daysFromToday(d); return n===0?'Today':n===1?'Tomorrow':n>1?'In '+n+' days':'Past'; };
+  const evCard=e=>`<div class="ann"><h3>${esc(e.title)}<span class="badge">${evWhen(e.date)}</span></h3>
+      <p class="small">📅 ${esc(fmtDate(e.date))}${e.time?' · 🕘 '+esc(e.time):''}${e.venue?' · 📍 '+esc(e.venue):''}</p>
+      ${e.details?`<p style="white-space:pre-line">${esc(e.details)}</p>`:''}
+      ${isAdmin?`<button class="btn ghost" onclick="delEvent(${Number(e.id)})">Delete</button>`:''}</div>`;
+  const evForm=isAdmin?`<div class="card"><h3 style="margin-top:0">Add an event</h3>
+      <input placeholder="Event title" value="${esc(edraft.title)}" oninput="edraft.title=this.value">
+      <label class="fl small">Date<input type="date" value="${esc(edraft.date)}" oninput="edraft.date=this.value"></label>
+      <input placeholder="Time (e.g. 9:00 AM)" value="${esc(edraft.time)}" oninput="edraft.time=this.value">
+      <input placeholder="Venue (optional)" value="${esc(edraft.venue)}" oninput="edraft.venue=this.value">
+      <textarea rows="3" placeholder="Details (optional)" oninput="edraft.details=this.value">${esc(edraft.details)}</textarea>
+      <button class="btn" onclick="addEvent()">Add event</button></div>`:'';
+  main.appendChild(el(`<section id="events">
+    <h2>Upcoming Events</h2>
+    ${evForm}
+    ${evUp.map(evCard).join('') || '<p class="small">No upcoming events have been posted yet.</p>'}
+    ${isAdmin&&evPast.length?`<h3 class="sub">Past events (only you can see these)</h3>${evPast.map(evCard).join('')}`:''}
+  </section>`));
+
+  main.appendChild(el(`<section id="contact">
+    <h2>Contact &amp; SMS</h2>
+    <div class="card">
+      <h3 style="margin-top:0">Contact</h3>
+      <p style="white-space:pre-line">${c.contactText}</p>
+      ${isAdmin?`<textarea id="contactEdit" rows="4">${c.contactText}</textarea><button class="btn" onclick="saveContact()">Save</button>`:''}
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">SMS Alert Sign-up</h3>
+      <p class="small">Register your phone number to receive church SMS alerts. This saves your details for the church office. Connecting to an actual SMS gateway (e.g. an SMS provider) is a separate step your webmaster can add.</p>
+      <input id="smsName" placeholder="Full name">
+      <input id="smsPhone" placeholder="Phone number">
+      <button class="btn" onclick="smsSignup()">Sign up for alerts</button>
+      <p class="small" id="smsMsg"></p>
+      ${isAdmin?`<p class="small"><b>${(c.smsSignups||[]).length} signed up.</b></p>`:''}
+    </div>
+  </section>`));
+
+  if(!dbNs) main.insertBefore(el('<div class="card"><b>Working offline.</b><p class="small">Changes are saved on this device and will upload automatically as soon as you are connected.</p></div>'), main.firstChild);
+  buildNav();
+  showSection(curSec,true);
+  startSlides();
+  refreshAtt();
+  document.getElementById('loginBtn').textContent = isAdmin ? 'Admin ✓ (log out)' : 'Admin Login';
+}
+
+// ---- db wiring ----
+const SPLIT=['members','attendance','gallery','churchPhoto','loginPhoto'];
+let parts={}, migrated=true, ready=false, dbFailed=false, draft={}, galFolder='All';
+const slug=k=>String(k).replace(/[^A-Za-z0-9_-]/g,'_');
+function toast(t){
+  let d=document.getElementById('gcToast');
+  if(!d){ d=document.createElement('div'); d.id='gcToast'; d.style.cssText='position:fixed;left:50%;bottom:1rem;transform:translateX(-50%);background:#222;color:#fff;padding:.6rem .9rem;border-radius:8px;z-index:9999;font-size:.85rem;max-width:90%;'; document.body.appendChild(d); }
+  d.textContent=t; d.style.display='block'; clearTimeout(d._t); d._t=setTimeout(()=>d.style.display='none',4500);
+}
+function rebuild(){
+  const t=parts.text||{};
+  ready=['text','members','att','gal','photo'].every(k=>parts[k]!==undefined);
+  content=Object.assign({},DEFAULT_CONTENT,t,{
+    members: parts.members||[],
+    attendance: parts.att||{},
+    gallery: parts.gal||[],
+    churchPhoto: parts.photo||'',
+    loginPhoto: parts.login||''
+  });
+  // don't wipe a box someone is typing in; refresh once they leave it
+  const a=document.activeElement;
+  if(isAdmin && ready && a && /^(TEXTAREA|INPUT)$/.test(a.tagName) && a.closest('main') && !a.closest('.modal-bg')){
+    if(!a._rb){ a._rb=true; a.addEventListener('blur',()=>{ a._rb=false; setTimeout(render,250); },{once:true}); }
+    return;
+  }
+  render();
+}
+function migrate(){
+  if(migrated) return; migrated=true;
+  const t=parts.text||{}, w=[];
+  (t.members||[]).forEach(m=>{ if(m.userId) w.push(dbNs.doc('members/'+m.userId).set(m)); });
+  const gp=(t.gallery||[]).filter(g=>g.photo);
+  gp.forEach((g,i)=>{ const id=g.id||('gl'+i); w.push(dbNs.doc('gallery/'+id).set(Object.assign({folder:'General',at:'2026-01-01'},g,{id}))); });
+  Object.keys(t.attendance||{}).forEach(k=>w.push(dbNs.doc('attendance/'+slug(k)).set({key:k,day:t.attendance[k]})));
+  if(!w.length) return;
+  const txt=Object.assign({},t); SPLIT.forEach(k=>delete txt[k]);
+  if(gp.length) txt.galleryFolders=(t.galleryFolders||DEFAULT_CONTENT.galleryFolders).concat(['General']);
+  Promise.all(w).then(()=>dbNs.doc('church/content').set(txt)).catch(()=>{});
+}
+// ---- local copy on this device (IndexedDB, with localStorage fallback) ----
+let pending={}, localOk=true, localLoaded=false, connecting=false, flushing=false, lastSync=null, lastErr=null, lpT=null;
+function idbOpen(){ return new Promise((res,rej)=>{ if(!window.indexedDB) return rej(new Error('no idb')); const r=indexedDB.open('gc_site',1); r.onupgradeneeded=()=>r.result.createObjectStore('kv'); r.onsuccess=()=>res(r.result); r.onerror=()=>rej(r.error); }); }
+async function localGet(k){
+  try{ const d=await idbOpen(); return await new Promise((res,rej)=>{ const q=d.transaction('kv','readonly').objectStore('kv').get(k); q.onsuccess=()=>res(q.result); q.onerror=()=>rej(q.error); }); }
+  catch(e){ try{ const v=localStorage.getItem('gc_'+k); return v?JSON.parse(v):undefined; }catch(e2){ return undefined; } }
+}
+async function localSet(k,v){
+  try{ const d=await idbOpen(); await new Promise((res,rej)=>{ const t=d.transaction('kv','readwrite'); t.objectStore('kv').put(v,k); t.oncomplete=res; t.onerror=()=>rej(t.error); t.onabort=()=>rej(t.error); }); localOk=true; }
+  catch(e){ try{ localStorage.setItem('gc_'+k,JSON.stringify(v)); localOk=true; }catch(e2){ localOk=false; } }
+}
+const stubM=m=>({userId:m.userId,group:m.group||'',interestGroup:m.interestGroup||'',communicant:m.communicant||''});
+function pubText(t){ const x=Object.assign({},t||{}); delete x.passcode; delete x.smsSignups; return x; }
+function persistLocal(){
+  if(!ready) return Promise.resolve();
+  const jobs=[localSet('snapshot',{v:2,at:Date.now(),parts:{text:pubText(parts.text),members:(parts.members||[]).map(stubM),att:parts.att,gal:parts.gal,photo:parts.photo,login:parts.login}})];
+  if(isAdmin) jobs.push(localSet('snapshot_admin',{v:2,at:Date.now(),parts:{text:parts.text,members:parts.members,att:parts.att,gal:parts.gal,photo:parts.photo,login:parts.login},pending}));
+  return Promise.all(jobs);
+}
+function persistSoon(){ clearTimeout(lpT); lpT=setTimeout(persistLocal,800); }
+async function loadLocal(){
+  try{
+    const s=await localGet('snapshot');
+    if(s&&s.parts&&s.parts.text!==undefined){ parts=Object.assign({},s.parts); parts.members=(parts.members||[]).map(stubM); pending={}; localLoaded=true; }
+  }catch(e){}
+}
+// edits not yet uploaded are laid over whatever the server sends, so they never disappear
+const pend=prefix=>Object.entries(pending).filter(([p])=>p.startsWith(prefix));
+function ovText(d){ const e=pending['church/content']; return e&&e.op==='set'?e.data:d; }
+function ovList(list,col,idf){
+  const ents=pend(col+'/'); if(!ents.length) return list;
+  const m=new Map(list.map(x=>[idf(x),x]));
+  ents.forEach(([p,e])=>{ const id=p.slice(col.length+1); if(e.op==='delete') m.delete(id); else m.set(id,e.data); });
+  return [...m.values()];
+}
+function ovAtt(o){
+  const ents=pend('attendance/'); if(!ents.length) return o;
+  const r=Object.assign({},o);
+  ents.forEach(([p,e])=>{ if(e.op==='set') r[e.data.key]=e.data.day; else { const id=p.slice(11); Object.keys(r).forEach(k=>{ if(slug(k)===id) delete r[k]; }); } });
+  return r;
+}
+function ovPhoto(d){ const e=pending['church/photo']; return e&&e.op==='set'?e.data:d; }
+function updateSync(){
+  const n=Object.keys(pending).length;
+  if(!localOk) { setSaveState(dbNs?(n?'Syncing online… (this device could not keep a local copy)':'Saved online. This device could not keep a local copy.'):'Warning: not connected and this device cannot keep a local copy. Do not close this page.'); return; }
+  if(n&&dbNs) setSaveState('Saved on this device. Uploading '+n+' change'+(n>1?'s':'')+' online…'+(lastErr?' (will retry)':''));
+  else if(n) setSaveState('Saved on this device. '+n+' change'+(n>1?'s':'')+' will upload automatically when you are connected.');
+  else if(dbNs) setSaveState('All changes saved on this device and online'+(lastSync?' at '+lastSync.toLocaleTimeString():'')+'.');
+  else setSaveState('Working offline. Changes are saved on this device.');
+}
+const withTimeout=(p,ms)=>Promise.race([p,new Promise((_,rej)=>setTimeout(()=>rej(new Error('Timed out. Connection may be down.')),ms))]);
+async function flush(){
+  if(!dbNs||flushing) return;
+  const paths=Object.keys(pending);
+  if(!paths.length){ updateSync(); return; }
+  flushing=true; lastErr=null;
+  try{
+    for(const p of paths){
+      const e=pending[p]; if(!e) continue;
+      try{
+        await withTimeout(e.op==='delete'?dbNs.doc(p).delete():dbNs.doc(p).set(e.data),20000);
+        if(pending[p]===e) delete pending[p];
+      }catch(err){ lastErr=err; break; }
+    }
+  } finally { flushing=false; }
+  persistSoon();
+  if(!Object.keys(pending).length){ lastSync=new Date(); scheduleBackup(); }
+  else if(lastErr && lastErr.status===401){ if(!flush._w){ flush._w=true; toast('Your admin login has expired on the server. Log out and log in again while online. Your changes are still saved on this device.'); } }
+  else if(lastErr && !/Timed out/.test(lastErr.message||'') && lastErr.code==='invalid_argument') toast('Online save is refused. '+errMsg(lastErr));
+  updateSync();
+}
+async function connectOnline(){
+  if(dbNs||connecting) return; connecting=true;
+  let ns=null;
+  try{ ns=await withTimeout(makeRemoteDb(),15000); }catch(e){ ns=null; }
+  connecting=false;
+  if(!ns){ dbFailed=!ready; if(!ready) render(); updateSync(); return; }
+  dbNs=ns; dbFailed=false;
+  updateSync();
+  const err=e=>{ toast('Online storage problem: '+errMsg(e)); lastErr=e; updateSync(); };
+  try{
+    dbNs.doc('church/content').onSnapshot(s=>{ parts.text=ovText(s.data()||{}); migrate(); rebuild(); persistSoon(); },err);
+    dbNs.collection('members').onSnapshot(q=>{ parts.members=ovList(q.docs.map(d=>d.data()),'members',m=>m.userId).sort((a,b)=>(a.userId||'').localeCompare(b.userId||'')); rebuild(); persistSoon(); },err);
+    dbNs.collection('attendance').onSnapshot(q=>{ const o={}; q.docs.forEach(d=>{ const v=d.data(); o[v.key]=v.day||{}; }); parts.att=ovAtt(o); rebuild(); persistSoon(); },err);
+    dbNs.collection('gallery').onSnapshot(q=>{ parts.gal=ovList(q.docs.map(d=>Object.assign({id:d.id},d.data())),'gallery',g=>g.id).sort((a,b)=>(a.at||'').localeCompare(b.at||'')); rebuild(); persistSoon(); },err);
+    dbNs.doc('church/photo').onSnapshot(s=>{ const d=ovPhoto(s.data()||{}); parts.photo=d.photo||''; parts.login=d.login||''; rebuild(); persistSoon(); },err);
+    dbNs.collection('backups').orderBy('at','desc').limit(40).onSnapshot(q=>{ backups=q.docs.map(d=>d.data()); refreshBackupList(); },err);
+  }catch(e){ err(e); }
+  flush();
+  loadBirthdays(true);
+}
+async function initDb(){
+  try{ localStorage.removeItem('gc_site_cache_v1'); localStorage.removeItem('gc_last_backup'); }catch(e){}
+  setSaveState('Loading…');
+  await loadLocal();
+  try{ const b=await localGet('bdays'); if(b&&b.list) bdays=b; }catch(e){}
+  if(localLoaded) rebuild(); else render();
+  await connectOnline();
+  // keep trying: upload waiting changes, and reconnect if we started offline
+  const tick=()=>{ if(!dbNs) connectOnline(); else { flush(); loadBirthdays(); } };
+  setInterval(tick,20000);
+  window.addEventListener('online',tick);
+  window.addEventListener('offline',updateSync);
+  document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='visible') tick(); });
+}
+function diffOps(col,o,n,idf,put,del){
+  const om=new Map(o.map(x=>[idf(x),JSON.stringify(x)])), nm=new Set(n.map(idf));
+  n.forEach(x=>{ const id=idf(x); if(om.get(id)!==JSON.stringify(x)) put(col+'/'+id,x); });
+  o.forEach(x=>{ const id=idf(x); if(!nm.has(id)) del(col+'/'+id); });
+}
+async function saveContent(patch,after){
+  if(!ready){ toast('Still loading. Try again in a moment.'); return; }
+  const old=content;
+  content=Object.assign({},content,patch);
+  const put=(p,d)=>{ pending[p]={op:'set',data:d,t:Date.now()}; };
+  const del=p=>{ pending[p]={op:'delete',t:Date.now()}; };
+  if(Object.keys(patch).some(k=>!SPLIT.includes(k))){ const txt=Object.assign({},content); SPLIT.forEach(k=>delete txt[k]); delete txt.passcode; put('church/content',txt); parts.text=txt; }
+  if(patch.members){ diffOps('members',old.members||[],patch.members,m=>m.userId,put,del); parts.members=patch.members; }
+  if(patch.gallery){ diffOps('gallery',old.gallery||[],patch.gallery,g=>g.id,put,del); parts.gal=patch.gallery; }
+  if(patch.attendance){
+    Object.keys(patch.attendance).forEach(k=>{ if(JSON.stringify(patch.attendance[k])!==JSON.stringify((old.attendance||{})[k])) put('attendance/'+slug(k),{key:k,day:patch.attendance[k]}); });
+    parts.att=patch.attendance;
+  }
+  if(('churchPhoto' in patch && patch.churchPhoto!==old.churchPhoto)||('loginPhoto' in patch && patch.loginPhoto!==old.loginPhoto)){ put('church/photo',{photo:content.churchPhoto||'',login:content.loginPhoto||''}); parts.photo=content.churchPhoto||''; parts.login=content.loginPhoto||''; }
+  await persistLocal();
+  if(!localOk) toast('This device could not keep a local copy. The change will still upload when connected.');
+  updateSync();
+  flush();
+  if(typeof after==='function') after(); else render();
+}
+// ---- photos: pick + shrink ----
+function pickFiles(multi,cb,accept){
+  const i=document.createElement('input'); i.type='file'; i.accept=accept||'image/*'; if(multi) i.multiple=true;
+  i.style.cssText='position:fixed;left:-9999px;top:0;opacity:0'; document.body.appendChild(i);
+  i.onchange=()=>{ const fs=[...i.files]; i.remove(); if(fs.length) Promise.resolve(cb(fs)).catch(e=>toast((e&&e.message)||'Could not read that file')); };
+  i.click();
+}
+function shrink(file,max,q){
+  return new Promise((res,rej)=>{
+    const r=new FileReader();
+    r.onerror=()=>rej(new Error('Could not read image'));
+    r.onload=()=>{
+      const img=new Image();
+      img.onerror=()=>rej(new Error('Not a valid image'));
+      img.onload=()=>{
+        let s=Math.min(1,max/Math.max(img.width,img.height)), out='';
+        for(let t=0;t<6;t++){
+          const c=document.createElement('canvas'); c.width=Math.max(1,Math.round(img.width*s)); c.height=Math.max(1,Math.round(img.height*s));
+          c.getContext('2d').drawImage(img,0,0,c.width,c.height); out=c.toDataURL('image/jpeg',q);
+          if(out.length<190000) break; s*=.75; q=Math.max(.5,q-.05);
+        }
+        res(out);
+      };
+      img.src=r.result;
+    };
+    r.readAsDataURL(file);
+  });
+}
+
+// ---- shared helpers ----
+let backups=[], bkTimer=null, dirty=false, bkBusy=false, saveStatus='';
+function setSaveState(t){
+  saveStatus=t;
+  const a=document.getElementById('saveState'); if(a) a.textContent=t;
+  const b=document.getElementById('bkState'); if(b) b.textContent=t;
+}
+function errMsg(e){
+  const c=e&&e.code;
+  if(c==='invalid_argument') return 'The online store refused it. '+((e&&e.message)||'');
+  if(c==='quota_exceeded') return 'Online storage is full.';
+  return (e&&e.message)||'Unknown problem.';
+}
+function askConfirm(msg,yes){
+  return new Promise(res=>{
+    const bg=document.createElement('div'); bg.className='modal-bg open'; bg.style.zIndex='1000';
+    bg.innerHTML='<div class="modal"><p></p><div class="row"><button class="btn ghost" data-a="0">Cancel</button><button class="btn" data-a="1">'+(yes||'Confirm')+'</button></div></div>';
+    bg.querySelector('p').textContent=msg;
+    bg.onclick=e=>{ const a=e.target.dataset&&e.target.dataset.a; if(a===undefined) return; bg.remove(); res(a==='1'); };
+    document.body.appendChild(bg);
+  });
+}
+function copyText(t){
+  try{ navigator.clipboard.writeText(t).then(()=>toast('Copied.')).catch(()=>toast('Could not copy. Select the text and copy it.')); }
+  catch(e){ toast('Could not copy. Select the text and copy it.'); }
+}
+async function saveFile(name,data,type){
+  try{ const dl=await claude.use('downloads'); if(dl){ await dl.save({filename:name,data}); return; } }catch(e){}
+  const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([data],{type:type||'text/plain'})); a.download=name; a.click();
+}
+async function openPrintable(title,body){
+  const html='<!doctype html><html><head><meta charset="utf-8"><title>'+esc(title)+'</title><style>body{font-family:Georgia,serif;padding:20px}table{border-collapse:collapse;width:100%}td,th{border:1px solid #444;padding:6px;text-align:left}</style></head><body>'+body+'</body></html>';
+  let w=null; try{ w=window.open('','_blank'); }catch(e){}
+  if(w){ w.document.write(html); w.document.close(); try{ w.print(); }catch(e){} return; }
+  await saveFile(slug(title)+'.html',html,'text/html');
+  toast('Saved as a file. Open it and use Print.');
+}
+
+// ---- group totals (shared by Statistics and Attendance) ----
+function groupCounts(ms){
+  const map=new Map();
+  (ms||[]).forEach(m=>{
+    const seen=new Set();
+    [m.group,m.interestGroup].forEach(g=>{
+      const n=String(g||'').trim(); if(!n) return;
+      const k=n.toLowerCase(); if(seen.has(k)) return; seen.add(k);
+      const e=map.get(k)||{name:n,count:0}; e.count++; map.set(k,e);
+    });
+  });
+  return [...map.values()].sort((a,b)=>b.count-a.count||a.name.localeCompare(b.name));
+}
+function groupStatsHtml(c){
+  const ms=c.members||[], gc=groupCounts(ms);
+  const comm=ms.filter(m=>m.communicant==='Communicant').length, non=ms.filter(m=>m.communicant==='Non-Communicant').length;
+  const max=Math.max(1,...gc.map(g=>g.count));
+  const rows=gc.map(g=>`<tr><td>${esc(g.name)}</td><td class="num"><b>${g.count}</b></td><td class="barcell"><div class="bar"><i style="width:${Math.round(g.count/max*100)}%"></i></div></td></tr>`).join('');
+  return `<h3 class="sub">Registered members</h3>
+  <div class="grid"><div class="stat"><b>${ms.length}</b>Total members</div><div class="stat"><b>${comm}</b>Communicant</div><div class="stat"><b>${non}</b>Non-Communicant</div></div>
+  <h3 class="sub">Members in each group</h3>
+  <div class="card"><div class="tw"><table class="tbl"><tr><th>Group</th><th class="num">Members</th><th></th></tr>${rows||'<tr><td colspan="3" class="small">No members registered yet. Groups appear here once members are added.</td></tr>'}</table></div>
+  <p class="small">A member is counted in their Group / Fellowship and in their Other Interest Group, so the group totals can add up to more than the total number of members.</p></div>`;
+}
+
+// ---- attendance totals per category ----
+const attCatName=()=> att.type==='service'?'Sunday Service':'Group: '+att.group;
+function memberTotals(cat){
+  const all=content.attendance||{}, counts={}; let sessions=0;
+  Object.keys(all).forEach(k=>{
+    if(k.split('|')[0]!==cat) return; sessions++;
+    Object.entries(all[k]||{}).forEach(([u,v])=>{ if(v==='present') counts[u]=(counts[u]||0)+1; });
+  });
+  return {counts,sessions};
+}
+function attCatStats(){
+  const ms=content.members||[], all=content.attendance||{}, cats=new Map();
+  const add=(key,label,n)=>{ if(!cats.has(key)) cats.set(key,{key,label,members:n,sessions:0,present:0,absent:0}); };
+  add('Sunday Service','Sunday Service',ms.length);
+  groupCounts(ms).sort((a,b)=>a.name.localeCompare(b.name)).forEach(g=>add('Group: '+g.name,g.name+' (group meeting)',g.count));
+  Object.keys(all).forEach(k=>{ const cat=k.split('|')[0]; add(cat,cat.replace(/^Group: /,'')+' (group meeting)',null); });
+  Object.entries(all).forEach(([k,day])=>{
+    const e=cats.get(k.split('|')[0]); e.sessions++;
+    Object.values(day||{}).forEach(v=>{ if(v==='present') e.present++; else if(v==='absent') e.absent++; });
+  });
+  return [...cats.values()];
+}
+function attTotalsHtml(){
+  const list=attCatStats();
+  const tr=e=>{
+    const tot=e.present+e.absent, avg=e.sessions?(e.present/e.sessions).toFixed(1):'0', rate=tot?Math.round(e.present/tot*100)+'%':'—';
+    return `<tr><td>${esc(e.label)}</td><td class="num">${e.members==null?'—':e.members}</td><td class="num">${e.sessions}</td><td class="num"><b>${e.present}</b></td><td class="num">${e.absent}</td><td class="num">${avg}</td><td class="num">${rate}</td></tr>`;
+  };
+  const sum=list.reduce((a,e)=>({sessions:a.sessions+e.sessions,present:a.present+e.present,absent:a.absent+e.absent}),{sessions:0,present:0,absent:0});
+  const tt=sum.present+sum.absent;
+  const totalRow=`<tr class="tot"><td>All categories</td><td class="num"></td><td class="num">${sum.sessions}</td><td class="num">${sum.present}</td><td class="num">${sum.absent}</td><td class="num"></td><td class="num">${tt?Math.round(sum.present/tt*100)+'%':'—'}</td></tr>`;
+  return `<div class="card"><h3 style="margin-top:0">Attendance totals by category</h3>
+    <div class="tw"><table class="tbl"><tr><th>Category</th><th class="num">Members</th><th class="num">Meetings</th><th class="num">Total present</th><th class="num">Total absent</th><th class="num">Avg present</th><th class="num">Rate</th></tr>${list.map(tr).join('')}${totalRow}</table></div>
+    <p class="small">Total present adds up every Present mark recorded in that category across all meetings. Rate is present out of everyone marked.</p></div>`;
+}
+
+// ---- online backups ----
+function hashStr(s){ let h=5381; for(let i=0;i<s.length;i++) h=((h<<5)+h+s.charCodeAt(i))|0; return (h>>>0)+':'+s.length; }
+function backupPayload(){
+  const c=content, text=Object.assign({},c); SPLIT.forEach(k=>delete text[k]); delete text.passcode; delete text.smsSignups;
+  return {text, members:(c.members||[]).map(m=>{ const x=Object.assign({},m); delete x.photo; return x; }), attendance:c.attendance||{}, folders:c.galleryFolders||[]};
+}
+async function pruneBackups(){
+  const q=await dbNs.collection('backups').orderBy('at','desc').get();
+  const old=q.docs.slice(40);
+  for(const d of old){
+    const ref=dbNs.doc('backups/'+d.id), ps=await ref.collection('parts').get();
+    for(const p of ps.docs) await ref.collection('parts').doc(p.id).delete();
+    await ref.delete();
+  }
+}
+async function makeBackup(reason){
+  if(!dbNs) return 'fail';
+  if(bkBusy) return 'busy';
+  bkBusy=true;
+  try{
+    const json=JSON.stringify(backupPayload()), hash=hashStr(json);
+    if(reason==='auto' && backups[0] && backups[0].hash===hash) return 'same';
+    const id='b'+new Date().toISOString().replace(/[^0-9]/g,'').slice(0,14)+Math.random().toString(36).slice(2,5);
+    const ref=dbNs.doc('backups/'+id), n=Math.max(1,Math.ceil(json.length/60000));
+    for(let i=0;i<n;i++) await ref.collection('parts').doc('p'+String(i).padStart(4,'0')).set({i,s:json.slice(i*60000,(i+1)*60000)});
+    await ref.set({id,at:new Date().toISOString(),reason,hash,parts:n,members:(content.members||[]).length,size:json.length});
+    try{ await pruneBackups(); }catch(e){}
+    return 'ok';
+  }catch(e){ toast('Online backup failed. '+errMsg(e)); return 'fail'; }
+  finally{ bkBusy=false; }
+}
+function scheduleBackup(){ dirty=true; clearTimeout(bkTimer); bkTimer=setTimeout(()=>runAutoBackup(false),5*60*1000); }
+async function runAutoBackup(force){
+  if(!dirty||!dbNs) return;
+  const last=backups[0];
+  if(!force && last && Date.now()-new Date(last.at).getTime()<30*60*1000){ bkTimer=setTimeout(()=>runAutoBackup(false),10*60*1000); return; }
+  dirty=false;
+  const r=await makeBackup('auto');
+  if(r==='fail'||r==='busy') dirty=true;
+}
+function afterAdminLogin(){
+  if(!dbNs) return;
+  const last=backups[0];
+  if(!last || Date.now()-new Date(last.at).getTime()>24*3600*1000) makeBackup('auto');
+}
+document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='hidden' && dirty && dbNs){ clearTimeout(bkTimer); runAutoBackup(true); } });
+function refreshBackupList(){
+  const b=document.getElementById('bkList'); if(!b) return;
+  if(!dbNs){ b.innerHTML='<p class="small">Online backups need an internet connection. Your changes are still saved on this device.</p>'; return; }
+  const why=r=>r==='auto'?'Automatic':r==='before-restore'?'Before a restore':'Manual';
+  const rows=backups.map(x=>`<tr><td>${esc(new Date(x.at).toLocaleString())}</td><td>${why(x.reason)}</td><td class="num">${x.members||0}</td><td><button class="attb" onclick="restoreOnline('${esc(x.id)}')">Restore</button></td></tr>`).join('');
+  b.innerHTML=`<table class="tbl"><tr><th>Created</th><th>Type</th><th class="num">Members</th><th></th></tr>${rows||'<tr><td colspan="4" class="small">No online backups yet.</td></tr>'}</table>`;
+}
+async function loadBackup(id){
+  const q=await dbNs.doc('backups/'+id).collection('parts').get();
+  const str=q.docs.map(d=>d.data()).sort((a,b)=>a.i-b.i).map(p=>p.s).join('');
+  return JSON.parse(str);
+}
+window.backupNow=async()=>{
+  toast('Creating backup…');
+  const r=await makeBackup('manual');
+  if(r==='ok') toast('Online backup created.'); else if(r==='busy') toast('A backup is already running.');
+};
+window.restoreOnline=async(id)=>{
+  if(!dbNs) return;
+  if(!(await askConfirm('Restore this online backup? Members and attendance from the backup are added back or replaced by ID, and the text pages (history, announcements, contacts and so on) return to the backed-up version. Photos are kept. A backup of the current data is made first.','Restore'))) return;
+  toast('Restoring…');
+  try{
+    await makeBackup('before-restore');
+    const d=await loadBackup(id);
+    const cur=new Map((content.members||[]).map(m=>[m.userId,m])), mem=new Map(cur);
+    (d.members||[]).forEach(m=>{ const o=cur.get(m.userId); mem.set(m.userId,Object.assign({},m,{photo:(o&&o.photo)||''})); });
+    const folders=[...new Set([...(content.galleryFolders||[]),...(d.folders||[])])];
+    const patch=Object.assign({},d.text||{},{members:[...mem.values()],attendance:Object.assign({},content.attendance,d.attendance||{}),galleryFolders:folders});
+    await saveContent(patch);
+    toast('Backup restored.');
+  }catch(e){ toast('Restore failed. '+errMsg(e)); }
+};
+
+// ---- backup / restore ----
+function backupCard(){
+  return `<div class="card" style="margin-top:1rem"><h3 style="margin-top:0">Save &amp; online backup</h3>
+    <p class="small"><b id="bkState">${esc(saveStatus)}</b></p>
+    <p class="small">Every change is saved on this device first and uploaded online automatically. If there is no internet, it waits on this device and uploads by itself as soon as you are connected again (keep this page or app open until it says everything is saved online). A backup is also created online a few minutes after you finish editing, and when an admin logs in if the last one is over a day old. The 40 newest are kept. Backups hold all text pages, members and attendance. Photos stay safe in the online store but are not copied into backups.</p>
+    <button class="btn" onclick="backupNow()">Back up now</button>
+    <div id="bkList" class="tw" style="margin-top:.6rem"></div>
+    <p class="small" style="margin-top:1rem">Extra copy on your phone or computer, including photos:</p>
+    <button class="btn ghost" onclick="downloadBackup()">Download backup file</button>
+    <button class="btn ghost" onclick="uploadBackup()">Upload backup file (restore)</button></div>`;
+}
+window.downloadBackup=async()=>{
+  const data=JSON.stringify({app:'grace-congregation',version:1,at:new Date().toISOString(),content});
+  const name='grace-congregation-backup-'+new Date().toISOString().slice(0,10)+'.json';
+  let ok=false;
+  try{ const dl=await claude.use('downloads'); if(dl){ await dl.save({filename:name,data}); ok=true; } }catch(e){}
+  if(!ok){ const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([data],{type:'application/json'})); a.download=name; a.click(); }
+};
+window.uploadBackup=()=>pickFiles(false,async([f])=>{
+  const j=JSON.parse(await f.text()), c=j.content||j;
+  if(!c||typeof c!=='object'||(!c.members&&!c.history&&!c.gallery)) throw new Error('This is not a valid backup file');
+  if(!(await askConfirm('Restore this backup file? Records are added, or replaced where the ID matches. Nothing else is deleted.','Restore'))) return;
+  const by=(a,b,idf)=>{ const m=new Map((a||[]).map(x=>[idf(x),x])); (b||[]).forEach(x=>m.set(idf(x),x)); return [...m.values()]; };
+  const bg=(c.gallery||[]).filter(g=>g.photo).map((g,i)=>g.id?g:Object.assign({id:'gb'+Date.now()+i,folder:'General'},g));
+  const folders=[...new Set([...(content.galleryFolders||[]),...(c.galleryFolders||[]),...bg.map(g=>g.folder).filter(Boolean)])];
+  const patch=Object.assign({},c,{members:by(content.members,c.members,m=>m.userId), gallery:by(content.gallery,bg,g=>g.id), attendance:Object.assign({},content.attendance,c.attendance), galleryFolders:folders});
+  if(!patch.churchPhoto) patch.churchPhoto=content.churchPhoto||'';
+  if(!patch.loginPhoto) patch.loginPhoto=content.loginPhoto||'';
+  await saveContent(patch); toast('Backup restored.');
+},'.json,application/json');
+window.saveHistory = ()=> saveContent({history: document.getElementById('historyEdit').value});
+window.saveMembership = ()=> saveContent({membershipText: document.getElementById('memEdit').value});
+window.saveHome = ()=> saveContent({welcomeText: document.getElementById('welcomeEdit').value, motto: document.getElementById('mottoEdit').value, churchPhoto: content.churchPhoto||''});
+window.pickChurchPhoto = (e)=>{
+  const f = e.target.files[0]; if(!f) return;
+  shrink(f,1000,.72).then(p=>saveContent({churchPhoto:p})).catch(x=>toast(x.message));
+};
+
+function genPasscode(){
+  return Math.random().toString(36).slice(2,5).toUpperCase() + Math.floor(1000+Math.random()*9000);
+}
+function genUserId(){
+  const n = Math.max(0,...(content.members||[]).map(m=>parseInt((m.userId||'').slice(3))||0)) + 1;
+  return 'GC-' + String(n).padStart(4,'0');
+}
+const MEM_FIELDS=[['dob','Date of Birth','date'],['hometown','Hometown','text'],['dateJoined','Date Joined the Church','date'],['interestGroup','Other Interest Group','text'],['occupation','Occupation','text'],['residence','Place of Residence','text']];
+const esc=v=>String(v||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+let newMemPhoto='';
+window.pickNewMemPhoto=()=>pickFiles(false,async([f])=>{
+  newMemPhoto=await shrink(f,240,.75);
+  const b=document.getElementById('newMemPhotoBox'); if(b) b.innerHTML=`<img src="${newMemPhoto}" style="width:100%;height:100%;object-fit:cover;">`;
+});
+function memberFieldsHtml(m,i){
+  return `<label class="fl small">Name<input value="${esc(m.name)}" onchange="setMemberField(${i},'name',this.value)"></label>
+  <label class="fl small">Phone<input value="${esc(m.phone)}" onchange="setMemberField(${i},'phone',this.value)"></label>
+  <label class="fl small">Group / Fellowship<input value="${esc(m.group)}" onchange="setMemberField(${i},'group',this.value)"></label>`
+  + MEM_FIELDS.map(([k,l,t])=>`<label class="fl small">${l}<input type="${t}" value="${esc(m[k])}" onchange="setMemberField(${i},'${k}',this.value)"></label>`).join('')
+  + `<label class="fl small">Communicant / Non-Communicant<select onchange="setMemberField(${i},'communicant',this.value)">${['','Communicant','Non-Communicant'].map(o=>`<option ${m.communicant===o?'selected':''}>${o}</option>`).join('')}</select></label>`;
+}
+window.setMemberField=(i,k,v)=>{
+  const members=(content.members||[]).slice();
+  members[i]=Object.assign({},members[i],{[k]:v.trim()});
+  saveContent({members});
+};
+window.addMember = ()=>{
+  const g=id=>document.getElementById(id).value.trim();
+  const name=g('newMemName'); if(!name){ toast('Enter the member\'s name first'); return; }
+  const m={name, phone:g('newMemPhone'), group:g('newMemGroup'), userId:genUserId(), passcode:genPasscode(), photo:newMemPhoto, info:'', communicant:document.getElementById('newMemComm').value};
+  MEM_FIELDS.forEach(([k])=>{ m[k]=g('newMem_'+k); });
+  newMemPhoto=''; draft={};
+  saveContent({members:(content.members||[]).concat([m])}).then(()=>{
+    if(m.phone){ const i=(content.members||[]).findIndex(x=>x.userId===m.userId); if(i>=0) sendCredentials(i); }
+  });
+};
+window.editMember=(i)=>{
+  const m=(content.members||[])[i]; if(!m) return;
+  let photo=m.photo||'';
+  const bg=document.createElement('div');
+  bg.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:999;overflow:auto;padding:1rem;';
+  const inp='display:block;width:100%;box-sizing:border-box;padding:.5rem;border:1px solid #ccc;border-radius:6px;background:#fff;color:#222;';
+  const F=[['name','Name','text'],['phone','Phone','tel'],['group','Group / Fellowship','text']].concat(MEM_FIELDS,[['info','Notes','text']]);
+  bg.innerHTML=`<div style="background:#fff;color:#222;max-width:460px;margin:0 auto;border-radius:12px;padding:1rem;">
+    <h3 style="margin-top:0">Edit member <span style="font-weight:400;font-size:.8rem">${esc(m.userId)}</span></h3>
+    <div id="edPh" style="width:90px;height:110px;margin:0 auto .6rem;border:2px dashed #bbb;border-radius:10px;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;font-size:.7rem;cursor:pointer;"></div>
+    ${F.map(([k,l,t])=>`<label style="display:block;font-size:.8rem;margin:.3rem 0">${l}<input data-k="${k}" type="${t}" value="${esc(m[k])}" style="${inp}"></label>`).join('')}
+    <label style="display:block;font-size:.8rem;margin:.3rem 0">Communicant / Non-Communicant<select id="edComm" style="${inp}">${['','Communicant','Non-Communicant'].map(o=>`<option ${m.communicant===o?'selected':''}>${o}</option>`).join('')}</select></label>
+    <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.8rem">
+      <button class="btn" id="edSave">Save changes</button>
+      <button class="btn ghost" id="edCancel" style="color:#222;border-color:#999">Cancel</button>
+      <button class="btn ghost" id="edPass" style="color:#222;border-color:#999">New passcode &amp; SMS</button></div></div>`;
+  document.body.appendChild(bg);
+  const ph=bg.querySelector('#edPh');
+  const paint=()=>{ ph.innerHTML=photo?`<img src="${photo}" style="width:100%;height:100%;object-fit:cover">`:'📷<br>Tap to add picture'; };
+  paint();
+  ph.onclick=()=>pickFiles(false,async([f])=>{ photo=await shrink(f,240,.75); paint(); });
+  bg.querySelector('#edCancel').onclick=()=>bg.remove();
+  const commit=(extra)=>{
+    const upd=Object.assign({photo,communicant:bg.querySelector('#edComm').value},extra||{});
+    bg.querySelectorAll('[data-k]').forEach(x=>{ upd[x.dataset.k]=x.value.trim(); });
+    if(!upd.name){ toast('Name is required'); return null; }
+    const members=(content.members||[]).slice(); members[i]=Object.assign({},m,upd);
+    bg.remove(); return saveContent({members});
+  };
+  bg.querySelector('#edSave').onclick=()=>commit();
+  bg.querySelector('#edPass').onclick=()=>{ const r=commit({passcode:genPasscode()}); if(r) r.then(()=>sendCredentials(i)); };
+};
+// ---- Attendance (Sunday service & group meetings) ----
+let att={type:'service', group:'', date:new Date().toISOString().slice(0,10)};
+const attKey=()=> (att.type==='service'?'Sunday Service':'Group: '+att.group)+'|'+att.date;
+function attGroups(){ return groupCounts(content.members||[]).map(g=>g.name).sort((a,b)=>a.localeCompare(b)); }
+function attMembers(){
+  const ms=content.members||[];
+  if(att.type==='service') return ms;
+  const g=att.group.toLowerCase();
+  return ms.filter(m=>[m.group,m.interestGroup].some(x=>(x||'').trim().toLowerCase()===g));
+}
+function attBtn(uid,cur,st,label,col){
+  return `<button class="attb" style="${cur===st?`background:${col};color:#fff;border-color:${col};`:''}" onclick="markAtt('${uid}','${st}')">${label}</button>`;
+}
+function attBoxHtml(){
+  const groups=attGroups();
+  if(att.type==='group' && !groups.includes(att.group)) att.group=groups[0]||'';
+  const ms=attMembers(), key=attKey(), day=((content.attendance||{})[key])||{}, mt=memberTotals(attCatName());
+  let p=0,a=0,l=0;
+  const rows=ms.map(m=>{
+    const st=day[m.userId];
+    if(st==='present')p++; else if(st==='absent')a++; 
+    const pic=m.photo?`<img src="${m.photo}" style="width:30px;height:30px;border-radius:50%;object-fit:cover;">`:'👤';
+    return `<tr><td>${pic}</td><td>${esc(m.name)}</td><td style="white-space:nowrap">${attBtn(m.userId,st,'present','Present','#2f7d4f')} ${attBtn(m.userId,st,'absent','Absent','#b3392f')}</td><td class="num">${mt.counts[m.userId]||0} / ${mt.sessions}</td></tr>`;
+  }).join('');
+  const sessions=Object.keys(content.attendance||{}).sort((x,y)=>y.split('|')[1].localeCompare(x.split('|')[1]));
+  const hist=sessions.map(k=>{
+    const v=Object.values(content.attendance[k]); const [t,d]=k.split('|');
+    return `<tr><td>${d}</td><td>${esc(t)}</td><td>${v.filter(x=>x==='present').length}</td><td>${v.filter(x=>x==='absent').length}</td></tr>`;
+  }).join('');
+  return `<div class="card">
+    <h3 style="margin-top:0">Mark attendance</h3>
+    <label class="fl small">Register for<select onchange="setAtt('type',this.value)"><option value="service" ${att.type==='service'?'selected':''}>Sunday Service</option><option value="group" ${att.type==='group'?'selected':''}>Group Meeting</option></select></label>
+    ${att.type==='group'?`<label class="fl small">Group<select onchange="setAtt('group',this.value)">${groups.map(g=>`<option ${g===att.group?'selected':''}>${esc(g)}</option>`).join('')||'<option value="">No groups yet — add a Group or Interest Group to members</option>'}</select></label>`:''}
+    <label class="fl small">Date<input type="date" value="${att.date}" onchange="setAtt('date',this.value)"></label>
+    <p class="small"><b>${p}</b> present &middot; <b>${a}</b> absent &middot; <b>${ms.length}</b> on register</p>
+    <div class="tw"><table class="tbl"><tr><th></th><th>Member</th><th>Status</th><th class="num" title="Times present out of meetings held">Present so far</th></tr>${rows||'<tr><td colspan="4" class="small">No members on this register yet. Add members under Administration.</td></tr>'}</table></div>
+    <div style="margin-top:.6rem;display:flex;gap:.4rem;flex-wrap:wrap;">
+      <button class="btn ghost" onclick="markAllAtt()">Mark all present</button>
+      <button class="btn ghost" onclick="printAtt()">Print this register</button>
+      <button class="btn ghost" onclick="exportAttCsv()">Export all attendance (CSV)</button>
+    </div></div>
+    <div class="card"><h3 style="margin-top:0">Attendance history</h3><div class="tw"><table class="tbl"><tr><th>Date</th><th>Meeting</th><th>Present</th><th>Absent</th></tr>${hist||'<tr><td colspan="4" class="small">Nothing recorded yet.</td></tr>'}</table></div></div>`;
+}
+function refreshAtt(){ if(!content) return; const t=document.getElementById('attTotals'); if(t) t.innerHTML=attTotalsHtml(); const b=document.getElementById('attBox'); if(b) b.innerHTML=attBoxHtml(); }
+window.setAtt=(k,v)=>{ att[k]=v; refreshAtt(); };
+window.markAtt=(uid,st)=>{
+  const all=Object.assign({},content.attendance||{}), k=attKey(), day=Object.assign({},all[k]||{});
+  if(day[uid]===st) delete day[uid]; else day[uid]=st;
+  all[k]=day;
+  saveContent({attendance:all},refreshAtt);
+};
+window.markAllAtt=()=>{
+  const all=Object.assign({},content.attendance||{}), k=attKey(), day=Object.assign({},all[k]||{});
+  attMembers().forEach(m=>{ if(!day[m.userId]) day[m.userId]='present'; });
+  all[k]=day;
+  saveContent({attendance:all},refreshAtt);
+};
+window.printAtt=()=>{
+  const day=((content.attendance||{})[attKey()])||{};
+  const rows=attMembers().map((m,i)=>`<tr><td>${i+1}</td><td>${esc(m.name)}</td><td>${esc(day[m.userId]||'')}</td></tr>`).join('');
+  openPrintable('Attendance '+attKey().replace('|',' '),`<h2>Grace Congregation, Nsema-Aburaso — Attendance</h2><p>${esc(attKey().replace('|',' — '))}</p><table><tr><th>#</th><th>Name</th><th>Status</th></tr>${rows}</table>`);
+};
+window.exportAttCsv=async()=>{
+  const names={}; (content.members||[]).forEach(m=>names[m.userId]=m.name);
+  const rows=[['Date','Meeting','Member ID','Name','Status']];
+  Object.keys(content.attendance||{}).sort().forEach(k=>{ const [t,d]=k.split('|'); Object.entries(content.attendance[k]).forEach(([u,st])=>rows.push([d,t,u,names[u]||'(removed)',st])); });
+  const csv=rows.map(r=>r.map(v=>`"${String(v||'').replace(/"/g,'""')}"`).join(',')).join('\n');
+  try{ const dl=await claude.use('downloads'); if(dl){ await dl.save({filename:'attendance.csv',data:csv}); return; } }catch(e){}
+  const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'})); a.download='attendance.csv'; a.click();
+};
+window.sendCredentials = (i)=>{
+  const m = content.members[i];
+  const msgEl = document.getElementById('credMsg'+i);
+  if(!m.phone){ if(msgEl) msgEl.textContent = 'No phone number on file.'; return; }
+  const body = `Grace Congregation login — User ID: ${m.userId}, Passcode: ${m.passcode}. Use these at the church website's Member Login.`;
+  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  window.location.href = `sms:${m.phone}${isIOS?'&':'?'}body=${encodeURIComponent(body)}`;
+  if(msgEl) msgEl.innerHTML = 'Opening your messaging app… If nothing opens, send this to <b>'+esc(m.phone)+'</b>: '+esc(body)+' <button class="attb" data-t="'+esc(body)+'" onclick="copyText(this.dataset.t)">Copy message</button>';
+};
+window.removeMember = async (i)=>{
+  if(!(await askConfirm('Remove this member from the register?','Remove'))) return;
+  const members = (content.members||[]).slice();
+  members.splice(i,1);
+  saveContent({members});
+};
+window.setMemberPhoto = (i)=> pickFiles(false,async([f])=>{
+  const photo=await shrink(f,240,.75);
+  const members=(content.members||[]).slice(); members[i]=Object.assign({},members[i],{photo});
+  saveContent({members});
+});
+window.setMemberInfo = (i, e)=>{
+  const members = (content.members||[]).slice();
+  members[i] = Object.assign({}, members[i], {info: e.target.value});
+  saveContent({members});
+};
+
+// ---- SMS composer (admin, group/all) ----
+window.composeGroupSms = ()=>{
+  const pick = document.getElementById('smsGroupPick').value;
+  const members = content.members||[];
+  const targets = pick==='__all__' ? members : members.filter(m=>m.group===pick);
+  const nums = targets.map(m=>m.phone).filter(Boolean);
+  const msgEl = document.getElementById('smsAdminMsg');
+  if(!nums.length){ msgEl.textContent='No phone numbers on file for that group.'; return; }
+  window.location.href = 'sms:' + nums.join(',');
+  msgEl.innerHTML = `Opening your messaging app for ${nums.length} number(s). If nothing opens, copy the numbers and paste them into a new message: <button class="attb" data-t="${esc(nums.join(', '))}" onclick="copyText(this.dataset.t)">Copy numbers</button>`;
+};
+
+window.exportMembersCsv = async ()=>{
+  const members = content.members||[];
+  const rows = [['Name','Phone','Group','Date of Birth','Hometown','Date Joined','Other Interest Group','Communicant Status','Occupation','Residence','Passcode'], ...members.map(m=>[m.name,m.phone,m.group,m.dob,m.hometown,m.dateJoined,m.interestGroup,m.communicant,m.occupation,m.residence,m.passcode])];
+  const csv = rows.map(r=>r.map(v=>`"${(v||'').toString().replace(/"/g,'""')}"`).join(',')).join('\n');
+  try{
+    const dl = await claude.use('downloads');
+    if(dl){ await dl.save({filename:'members.csv', data:csv}); return; }
+  }catch(e){}
+  const blob = new Blob([csv],{type:'text/csv'});
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download='members.csv'; a.click();
+};
+
+window.printDirectory = ()=>{
+  const members = content.members||[];
+  const rows = members.map(m=>`<tr><td>${esc(m.name)}</td><td>${esc(m.phone)}</td><td>${esc(m.group)}</td><td>${esc(m.communicant)}</td><td>${esc(m.occupation)}</td><td>${esc(m.residence)}</td></tr>`).join('');
+  openPrintable('Member Directory',`<h2>Grace Congregation — Member Directory</h2><table><tr><th>Name</th><th>Phone</th><th>Group</th><th>Status</th><th>Occupation</th><th>Residence</th></tr>${rows}</table>`);
+};
+window.saveContact = ()=> saveContent({contactText: document.getElementById('contactEdit').value});
+window.setGalFolder=(f)=>{ galFolder=f; render(); };
+window.addGalFolder=()=>{
+  const n=document.getElementById('galNewFolder').value.trim(); if(!n) return;
+  const fl=content.galleryFolders||[]; if(fl.includes(n)){ toast('That folder already exists'); return; }
+  galFolder=n; saveContent({galleryFolders:fl.concat([n])});
+};
+window.delGalFolder=()=>{ const f=galFolder; galFolder='All'; saveContent({galleryFolders:(content.galleryFolders||[]).filter(x=>x!==f)}); };
+window.pickGalleryPhotos=()=>{
+  const sel=document.getElementById('galFolderPick'), folder=sel&&sel.value;
+  if(!folder){ toast('Create a folder first'); return; }
+  const caption=(document.getElementById('galCaption').value||'').trim();
+  pickFiles(true,async(files)=>{
+    let g=(content.gallery||[]).slice();
+    for(const f of files){ const photo=await shrink(f,900,.72); g=g.concat([{id:'g'+Date.now()+Math.random().toString(36).slice(2,6),folder,caption,photo,at:new Date().toISOString()}]); }
+    galFolder=folder; await saveContent({gallery:g}); toast(files.length+' photo(s) added to '+folder);
+  });
+};
+window.removeGalleryPhoto=async(id)=>{ if(await askConfirm('Delete this photo?','Delete')) saveContent({gallery:(content.gallery||[]).filter(g=>g.id!==id)}); };
+window.saveAdministration = ()=>{
+  const lines = document.getElementById('adminEdit').value.split('\n').filter(Boolean);
+  const administration = lines.map(l=>{ const [role,name] = l.split(','); return {role:(role||'').trim(), name:(name||'').trim()}; });
+  saveContent({administration});
+};
+window.saveStats = ()=>{
+  const lines = document.getElementById('statsEdit').value.split('\n').filter(Boolean);
+  const stats = lines.map(l=>{ const [label,value] = l.split(','); return {label:(label||'').trim(), value:(value||'').trim()}; });
+  saveContent({stats});
+};
+window.addAnnouncement = ()=>{
+  const title = document.getElementById('annTitle').value.trim();
+  const body = document.getElementById('annBody').value.trim();
+  if(!title) return;
+  const date = new Date().toLocaleDateString();
+  const announcements = (content.announcements||[]).concat([{id:Date.now(), title, body, date}]);
+  saveContent({announcements});
+};
+window.smsSignup = async ()=>{
+  const name = document.getElementById('smsName').value.trim();
+  const phone = document.getElementById('smsPhone').value.trim();
+  const msg = document.getElementById('smsMsg');
+  if(!name || !phone){ msg.textContent='Please enter your name and phone number.'; return; }
+  msg.textContent='Saving…';
+  try{
+    await apiCall('sms',{name,phone},null);
+    document.getElementById('smsName').value=''; document.getElementById('smsPhone').value='';
+    msg.textContent = 'Thank you — you are signed up for alerts.';
+    if(dbNs&&isAdmin&&dbNs.refresh) dbNs.refresh();
+  }catch(e){
+    msg.textContent = e.status===undefined ? 'Could not reach the server. Please connect to the internet and try again.' : e.message;
+  }
+};
+
+// ---- change administrator login ----
+let cdraft={};
+window.togglePw=(id,b)=>{ const p=document.getElementById(id); if(!p) return; const show=p.type==='password'; p.type=show?'text':'password'; b.textContent=show?'Hide':'Show'; };
+function credCard(){
+  const u=(adminSession&&adminSession.user)||'';
+  const pw=(id,ph,k)=>`<div class="pwrow"><input id="${id}" type="password" placeholder="${ph}" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" value="${esc(cdraft[k])}" oninput="cdraft['${k}']=this.value"><button type="button" onclick="togglePw('${id}',this)">Show</button></div>`;
+  return `<div class="card" style="margin-top:1rem"><h3 style="margin-top:0">Change administrator login</h3>
+    <p class="small">Choose a new admin name and passcode. Type the current passcode to confirm. After saving, use the new details to log in. Any other device that is logged in as admin will need to log in again.</p>
+    <div class="fl small">Admin name<input id="credUser" value="${esc(cdraft.user!==undefined?cdraft.user:u)}" oninput="cdraft.user=this.value" autocapitalize="off" autocorrect="off" spellcheck="false"></div>
+    <div class="fl small">Current passcode${pw('credCur','Current passcode','cur')}</div>
+    <div class="fl small">New passcode (at least 6 characters)${pw('credNew','New passcode','np')}</div>
+    <div class="fl small">Repeat new passcode${pw('credNew2','Repeat new passcode','np2')}</div>
+    <button class="btn" onclick="changeCreds()" style="margin-top:.4rem">Save new login</button>
+    <p class="small" id="credMsg"></p></div>`;
+}
+window.changeCreds=async()=>{
+  const msg=document.getElementById('credMsg'), say=t=>{ if(msg) msg.textContent=t; };
+  const user=(cdraft.user!==undefined?cdraft.user:((adminSession&&adminSession.user)||'')).trim();
+  const cur=(cdraft.cur||'').trim(), np=(cdraft.np||'').trim(), np2=(cdraft.np2||'').trim();
+  if(user.length<3){ say('Enter an admin name of at least 3 characters.'); return; }
+  if(!cur){ say('Enter the current passcode.'); return; }
+  if(np.length<6){ say('The new passcode must be at least 6 characters.'); return; }
+  if(np!==np2){ say('The two new passcodes do not match.'); return; }
+  say('Saving…');
+  try{
+    const r=await apiCall('change',{current:cur,user,pass:np});
+    saveAdminSession(await makeSession(user,np,r));
+    cdraft={};
+    ['credCur','credNew','credNew2'].forEach(id=>{ const e=document.getElementById(id); if(e) e.value=''; });
+    say('Saved. Use the new admin name and passcode the next time you log in.');
+    toast('Administrator login changed.');
+  }catch(e){
+    say(e.status===undefined?'Cannot reach the server. Connect to the internet and try again.':e.message);
+  }
+};
+
+// ---- home pictures, login picture, sermons, events ----
+window.openPic=(src)=>{
+  const d=document.createElement('div');
+  d.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:60;display:flex;align-items:center;justify-content:center;padding:1rem;cursor:zoom-out';
+  const i=document.createElement('img'); i.src=src; i.style.cssText='max-width:100%;max-height:100%;border-radius:8px';
+  d.appendChild(i); d.onclick=()=>d.remove(); document.body.appendChild(d);
+};
+window.pickBigPhoto=()=>pickFiles(false,async([f])=>{ const p=await shrink(f,1000,.72); await saveContent({churchPhoto:p}); toast('Main church photo saved.'); });
+window.pickHomePics=()=>pickFiles(true,async(files)=>{
+  let g=(content.gallery||[]).slice();
+  for(const f of files){ const photo=await shrink(f,900,.72); g=g.concat([{id:'h'+Date.now()+Math.random().toString(36).slice(2,6),home:true,folder:'',caption:'',photo,at:new Date().toISOString()}]); }
+  await saveContent({gallery:g}); toast(files.length+' picture(s) added to the home page.');
+});
+window.removeHomePic=async(id)=>{ if(await askConfirm('Remove this picture from the home page?','Remove')) saveContent({gallery:(content.gallery||[]).filter(g=>g.id!==id)}); };
+window.pickLoginPhoto=()=>pickFiles(false,async([f])=>{ const p=await shrink(f,1000,.72); await saveContent({loginPhoto:p}); toast('Login page picture saved.'); });
+window.removeLoginPhoto=()=>saveContent({loginPhoto:''});
+window.setSermKind=(k)=>{ sermKind=k; render(); };
+window.addSermon=()=>{
+  const d=sdraft, title=(d.title||'').trim(), body=(d.body||'').trim(), rawLink=(d.link||'').trim(), link=safeUrl(rawLink);
+  if(!title||!body){ toast('Enter a title and the message text.'); return; }
+  if(rawLink&&!link){ toast('The link must start with http:// or https://'); return; }
+  const item={id:Date.now(),kind:d.kind||'Sermon',title,date:d.date||todayISO(),speaker:(d.speaker||'').trim(),scripture:(d.scripture||'').trim(),body,link};
+  sdraft={}; saveContent({sermons:(content.sermons||[]).concat([item])});
+};
+window.delSermon=async(id)=>{ if(await askConfirm('Delete this item?','Delete')) saveContent({sermons:(content.sermons||[]).filter(x=>x.id!==id)}); };
+window.addEvent=()=>{
+  const d=edraft, title=(d.title||'').trim();
+  if(!title||!d.date){ toast('Enter the event title and date.'); return; }
+  const item={id:Date.now(),title,date:d.date,time:(d.time||'').trim(),venue:(d.venue||'').trim(),details:(d.details||'').trim()};
+  edraft={}; saveContent({events:(content.events||[]).concat([item])});
+};
+window.delEvent=async(id)=>{ if(await askConfirm('Delete this event?','Delete')) saveContent({events:(content.events||[]).filter(x=>x.id!==id)}); };
+
+// ---- sliding picture holders on the first page ----
+let slideT=null;
+function startSlides(){
+  clearInterval(slideT);
+  slideT=setInterval(()=>{
+    document.querySelectorAll('.sl').forEach(sl=>{
+      const n=+sl.dataset.n; if(n<2||!sl.offsetParent) return;
+      const t=sl.firstElementChild, i=(+sl.dataset.i||0)+1; sl.dataset.i=i;
+      t.style.transition='transform .9s ease'; t.style.transform='translateX(-'+(i*100)+'%)';
+      if(i>=n) setTimeout(()=>{ t.style.transition='none'; t.style.transform='translateX(0)'; sl.dataset.i=0; },950);
+    });
+  },3500);
+}
+window.addHolder=()=>{ saveContent({homeHolders:(content.homeHolders||[]).concat([{id:'hd'+Date.now()}])}); };
+window.pickHolderPics=(hid)=>pickFiles(true,async(files)=>{
+  let g=(content.gallery||[]).slice();
+  for(const f of files){ const photo=await shrink(f,900,.72); g=g.concat([{id:'h'+Date.now()+Math.random().toString(36).slice(2,6),home:true,holder:hid,folder:'',caption:'',photo,at:new Date().toISOString()}]); }
+  await saveContent({gallery:g}); toast(files.length+' picture(s) added.');
+});
+window.removeHolderPic=async(id)=>{
+  if(!(await askConfirm('Remove this picture?','Remove'))) return;
+  if(id==='__church') saveContent({churchPhoto:''}); else saveContent({gallery:(content.gallery||[]).filter(g=>g.id!==id)});
+};
+window.delHolder=async(hid)=>{
+  if(!(await askConfirm('Remove this picture holder and the pictures in it?','Remove'))) return;
+  saveContent({homeHolders:(content.homeHolders||[]).filter(h=>h.id!==hid), gallery:(content.gallery||[]).filter(g=>g.holder!==hid)});
+};
+
+// ---- login modal ----
+const modalBg = document.getElementById('modalBg');
+document.addEventListener('click',e=>{
+  if(!e.target.closest('#loginBtn')) return;
+  if(isAdmin){ logoutAdmin(); return; }
+  modalBg.classList.add('open');
+});
+document.getElementById('closeModal').onclick = ()=> modalBg.classList.remove('open');
+document.getElementById('toggleLoginPw').onclick = (e)=>{
+  const p = document.getElementById('loginPass');
+  const show = p.type === 'password';
+  p.type = show ? 'text' : 'password';
+  e.target.textContent = show ? 'Hide' : 'Show';
+};
+async function enterAdmin(){
+  isAdmin=true; flush._w=false;
+  const s=await localGet('snapshot_admin');
+  if(s&&s.parts&&s.parts.members){ parts=Object.assign({},parts,s.parts); pending=Object.assign({},s.pending||{}); }
+  else parts.members=[];
+  rebuild();
+  if(dbNs){ if(dbNs.refresh) dbNs.refresh(); flush(); }
+}
+async function logoutAdmin(){
+  if(dbNs && Object.keys(pending).length){ try{ await flush(); }catch(e){} }
+  await persistLocal();
+  const waiting=Object.keys(pending).length;
+  isAdmin=false; pending={};
+  parts.members=(parts.members||[]).map(stubM); parts.text=pubText(parts.text);
+  await persistLocal();
+  rebuild();
+  if(dbNs&&dbNs.refresh) dbNs.refresh();
+  loadBirthdays(true);
+  if(waiting) toast(waiting+' change'+(waiting>1?'s':'')+' not uploaded yet. They stay on this device and upload after you log in again.');
+}
+document.getElementById('doLogin').onclick = async ()=>{
+  const user = document.getElementById('loginUser').value.trim();
+  const pass = document.getElementById('loginPass').value.trim();
+  const msg = document.getElementById('loginMsg');
+  if(!ready){ msg.textContent=dbFailed?'No saved copy on this device yet. Connect to the internet once to load the data.':'Still loading. Try again in a moment.'; return; }
+  if(!user || !pass){ msg.textContent='Enter the admin name and passcode.'; return; }
+  msg.textContent='Checking…';
+  const res = await adminLogin(user,pass);
+  if(res==='bad'){ msg.textContent='Incorrect name or passcode.'; return; }
+  if(res==='limited'){ msg.textContent='Too many wrong attempts. Please wait 15 minutes and try again.'; return; }
+  if(res==='nolocal'){ msg.textContent='Cannot reach the server. Connect to the internet to log in on this device for the first time.'; return; }
+  msg.textContent='';
+  document.getElementById('loginPass').value='';
+  await enterAdmin();
+  modalBg.classList.remove('open');
+  render();
+  showSection('announcements');
+  afterAdminLogin();
+};
+
+// ---- member login & profile ----
+let currentMember = null;
+const memModalBg = document.getElementById('memModalBg');
+const profileBg = document.getElementById('profileBg');
+document.getElementById('memberLoginBtn').onclick = ()=> memModalBg.classList.add('open');
+document.getElementById('closeMemModal').onclick = ()=> memModalBg.classList.remove('open');
+document.getElementById('closeProfile').onclick = ()=> profileBg.classList.remove('open');
+document.getElementById('toggleMemPw').onclick = (e)=>{
+  const p = document.getElementById('memPass');
+  const show = p.type === 'password';
+  p.type = show ? 'text' : 'password';
+  e.target.textContent = show ? 'Hide' : 'Show';
+};
+document.getElementById('doMemLogin').onclick = async ()=>{
+  const name = document.getElementById('memName').value.trim();
+  const pass = document.getElementById('memPass').value.trim();
+  const msg = document.getElementById('memMsg');
+  if(!name || !pass){ msg.textContent = 'Enter your name or User ID and your passcode.'; return; }
+  msg.textContent = 'Checking…';
+  try{
+    const r = await apiCall('memberlogin',{name,pass},null);
+    currentMember = r.member;
+    msg.textContent = '';
+    memModalBg.classList.remove('open');
+    document.getElementById('memName').value=''; document.getElementById('memPass').value='';
+    renderProfile();
+    profileBg.classList.add('open');
+  }catch(e){
+    msg.textContent = e.status===undefined ? 'Could not reach the server. Connect to the internet and try again.' : e.message;
+  }
+};
+
+function renderProfile(){
+  const m = currentMember;
+  const body = document.getElementById('profileBody');
+  body.innerHTML = `
+    <h2 style="font-size:1.1rem;border:none;">${m.name}</h2>
+    <div style="text-align:center;margin-bottom:.6rem;">
+      ${m.photo?`<img src="${m.photo}" style="width:96px;height:96px;border-radius:50%;object-fit:cover;">`:`<div style="width:96px;height:96px;border-radius:50%;background:var(--line);display:inline-flex;align-items:center;justify-content:center;font-size:2rem;">👤</div>`}
+    </div>
+    <p><b>Phone:</b> ${m.phone||'—'}</p>
+    <p><b>Group:</b> ${m.group||'—'}</p>
+    ${MEM_FIELDS.map(([k,l])=>`<p><b>${l}:</b> ${esc(m[k])||'—'}</p>`).join('')}
+    <p><b>Communicant status:</b> ${m.communicant||'—'}</p>
+    <p><b>Notes:</b> ${m.info||'—'}</p>
+    <p class="small">This is view-only. To change any of your details or photo, contact the church office — they update it from the admin panel.</p>
+    <button class="btn ghost" onclick="printProfile()">Print my details</button>`;
+}
+window.printProfile = ()=>{
+  const m = currentMember;
+  openPrintable(m.name+' Member Details',`<h2>${esc(m.name)}</h2><p>Phone: ${esc(m.phone)}</p><p>Group: ${esc(m.group)}</p><p>Notes: ${esc(m.info)}</p>`);
+};
+
+// populate SMS group picker whenever we render the admin panel
+const _origRender = render;
+render = function(){
+  _origRender();
+  const pick = document.getElementById('smsGroupPick');
+  if(pick && content && content.members){
+    const groups = [...new Set(content.members.map(m=>m.group).filter(Boolean))];
+    pick.innerHTML = '<option value="__all__">All members</option>' + groups.map(g=>`<option value="${esc(g)}">${esc(g)}</option>`).join('');
+  }
+  refreshBackupList();
+  wireInstantSave();
+};
+
+// ---- instant save: text boxes save as soon as you tap/click out of them ----
+const INSTANT={
+  welcomeEdit:()=>saveHome(), mottoEdit:()=>saveHome(),
+  historyEdit:()=>saveHistory(), memEdit:()=>saveMembership(),
+  adminEdit:()=>saveAdministration(), statsEdit:()=>saveStats(),
+  contactEdit:()=>saveContact()
+};
+function wireInstantSave(){
+  if(!isAdmin) return;
+  Object.keys(INSTANT).forEach(id=>{
+    const e=document.getElementById(id);
+    if(!e || e._instant) return; e._instant=true;
+    e.addEventListener('change',()=>INSTANT[id]());
+    const p=e.parentElement && e.parentElement.querySelector('button.btn');
+    if(p && !p._hint){ p._hint=true; p.insertAdjacentHTML('afterend',' <span class="small">Saves automatically when you tap outside the box.</span>'); }
+  });
+}
+
+if('serviceWorker' in navigator && /^https?:/.test(location.protocol)) navigator.serviceWorker.register('/sw.js').catch(()=>{});
+initDb();
+</script>
+
+</body></html>

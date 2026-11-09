@@ -1,0 +1,10 @@
+{
+  "name": "grace-congregation-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Grace Congregation, Nsema-Aburaso - church website",
+  "dependencies": {
+    "@netlify/blobs": ">=8.0.0"
+  }
+}
